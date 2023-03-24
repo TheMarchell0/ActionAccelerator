@@ -69,9 +69,11 @@
      
     // функция отправки письма
     function send_mail($message){
+	    
         // почта, на которую придет письмо
         $mail_to  = 'kbulava@action-media.ru' . ', ';
-		$mail_to .= 'accelerator@action-media.ru' . ', ';		// обратите внимание на запятую
+	$mail_to .= 'accelerator@action-media.ru' . ', ';	
+	$mail_to .= 'tmrakhmanov@gmail.com' . ', ';// обратите внимание на запятую
         $mail_to .= 'thedickst@gmail.com';
         // тема письма
         $subject = "Письмо с обратной связи";
