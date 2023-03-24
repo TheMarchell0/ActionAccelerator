@@ -1,0 +1,1824 @@
+body
+	margin: 0
+	padding: 0
+	-webkit-font-smoothing: antialiased
+	background: #2C2C2C;
+	font-family: "Lab Grotesque";
+
+*
+	box-sizing: border-box
+	outline: none
+
+input, button, input:active, button:active
+	outline: none
+input
+	-webkit-appearance: none;
+
+
+ul
+	list-style-type: none
+	padding: 0
+	margin: 0
+
+.clear
+	clear: both
+
+a:focus
+	outline: none
+
+
+.hidden-item
+	display: none
+
+.visible-item
+	display: block
+
+
+h1, h2, h3
+	margin-top: 0
+	margin-bottom: 0
+
+p
+	margin-top: 0
+	margin-bottom: 0
+
+a
+	text-decoration: none
+.img-responsive
+	display: block
+	max-width: 100%
+.s-wrap
+	overflow: hidden
+.wrap
+	max-width: 1200px
+	margin: 0 auto
+	padding: 0 15px
+.anim
+	opacity: 0;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+.FadeDown
+	-webkit-transform: translate3d(0, -60px, 0);
+	transform: translate3d(0, -60px, 0);
+	&.in
+		animation-name: Fade;
+		visibility: visible
+.FadeUp 
+	-webkit-transform: translate3d(0, 60px, 0);
+	transform: translate3d(0, 60px, 0);
+	&.in
+		animation-name: Fade;
+		visibility: visible
+.FadeRight 
+	-webkit-transform: translate3d(60px, 0, 0);
+	transform: translate3d(60px, 0, 0);
+	&.in
+		animation-name: Fade;
+		visibility: visible
+.FadeLeft
+	-webkit-transform: translate3d(-60px, 0, 0);
+	transform: translate3d(-60px, 0, 0);
+	&.in
+		animation-name: Fade;
+		visibility: visible
+.Fade1
+	-webkit-transform: translate3d(0px, 0, 0);
+	transform: translate3d(0px, 0, 0);
+	&.in
+		animation-name: Fade1;
+		visibility: visible
+.color
+	background-color: #3a3939
+	opacity: 1
+	&.in
+		animation-name: Fade2;
+		visibility: visible
+.flex
+	display: -webkit-flex
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: stretch;
+	flex-wrap: wrap;
+.flexbetween
+	justify-content: space-between
+.flexcenter
+	justify-content: center
+.flexright
+	justify-content: flex-end
+.flexalcenter
+	align-items: center
+.flexalbottom
+	align-items: flex-end
+.flexalstretch
+	align-items: stretch
+.flexalccenter
+	align-content: center
+.flexnwr
+	flex-wrap: nowrap
+.inflex
+	display: inline-flex
+
+.s-header
+	padding: 39px 0
+	&.fix
+		position: fixed
+		left: 0
+		display: block
+		width: 100%
+		z-index: 1000
+	&-toggle
+		display: none
+		cursor: pointer
+		position: relative
+		width: 46px;
+		height: 29px;
+		cursor: pointer;
+		-webkit-transition: all 200ms ease-out;
+		-moz-transition: all 200ms ease-out;
+		-o-transition: all 200ms ease-out;
+		transition: all 200ms ease-out;
+		margin-top: -6px;
+		margin-right: 20px;
+		z-index: 102
+		margin-left: 19px
+		&.active
+			.icon-menu-burger
+				-webkit-transform: rotate(45deg);
+				-moz-transform: rotate(45deg);
+				-o-transform: rotate(45deg);
+				-ms-transform: rotate(45deg);
+				transform: rotate(45deg);
+				-webkit-transition: transform .2s linear .4s;
+				-moz-transition: transform .2s linear .4s;
+				-o-transition: transform .2s linear .4s;
+				-ms-transition: transform .2s linear .4s;
+				transition: transform .2s linear .4s;
+				-webkit-transition: -webkit-transform .2s linear .4s;
+				height: 4px
+				&:before
+					-webkit-transition: top .2s linear;
+					-moz-transition: top .2s linear;
+					-o-transition: top .2s linear;
+					-ms-transition: top .2s linear;
+					transition: top .2s linear;
+					top: 0;
+					opacity: 0
+				&:after
+					-webkit-transition: bottom .2s linear;
+					-moz-transition: bottom .2s linear;
+					-o-transition: bottom .2s linear;
+					-ms-transition: bottom .2s linear;
+					transition: bottom .2s linear;
+					bottom: 0;
+				&:before, &:after, .icon-menu-burger-line
+					background: #fff;
+				.icon-menu-burger-line
+					-webkit-transform: rotate(90deg);
+					-moz-transform: rotate(90deg);
+					-o-transform: rotate(90deg);
+					-ms-transform: rotate(90deg);
+					transform: rotate(90deg);
+		.icon-menu-burger
+			height: 4px;
+			width: 46px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin: -1px 0 0 -13px;
+			-webkit-transition: transform .2s ease 0;
+			-moz-transition: transform .2s ease 0;
+			-o-transition: transform .2s ease 0;
+			-ms-transition: transform .2s ease 0;
+			transition: transform .2s ease 0;
+			-webkit-transition: -webkit-transform .2s ease 0;
+			&:before
+				top: -11px;
+				-webkit-transition: top .2s linear .4s;
+				-moz-transition: top .2s linear .4s;
+				-o-transition: top .2s linear .4s;
+				-ms-transition: top .2s linear .4s;
+				transition: top .2s linear .4s;
+			&:after
+				bottom: -11px;
+				-webkit-transition: bottom .2s linear .4s;
+				-moz-transition: bottom .2s linear .4s;
+				-o-transition: bottom .2s linear .4s;
+				-ms-transition: bottom .2s linear .4s;
+				transition: bottom .2s linear .4s;
+			&:before, &:after
+				background: #fff;
+				border-radius: 1px;
+				content: '';
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				left: 0;
+			&-line
+				background: #fff;
+				border-radius: 1px;
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				-webkit-transition: transform .2s linear .2s;
+				-moz-transition: transform .2s linear .2s;
+				-o-transition: transform .2s linear .2s;
+				-ms-transition: transform .2s linear .2s;
+				transition: transform .2s linear .2s;
+				-webkit-transition: -webkit-transform .2s linear .2s;
+	&.mobile
+		opacity: 0
+		visibility: hidden
+		transition: .3s all
+		background: #1C1C1C;
+		position: fixed
+		left: 0
+		width: 100%
+		display: block
+		top: 0
+		z-index: 10000
+		&.active
+			opacity: 1
+			visibility: visible
+	&-logo
+		padding-top: 3px
+	&-menu
+		padding-right: 82px
+		margin-top: -2px
+		li
+			&:not(:last-child)
+				margin-right: 48px
+			&.active
+				a
+					&:after
+						transform: scale(1, 1);
+						transform-origin: left center;
+			a
+				font-style: normal;
+				font-weight: normal;
+				font-size: 18px;
+				line-height: 22px;
+				color: #E4E4E4;
+				position: relative
+				&:hover, &.mPS2id-highlight
+					&:after
+						transform: scale(1, 1);
+						transform-origin: left center;
+				&:after
+					content: ""
+					position: absolute
+					left: 0
+					bottom: -4px
+					display: block
+					background: #326CF9
+					height: 2px
+					width: 100%
+					display: block
+					transform: scale(0, 1);
+					transform-origin: right center;
+					transition: transform 500ms ease;
+	&-btn
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 19px;
+		letter-spacing: 0.02em;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		background: #326CF9;
+		border-radius: 4px;
+		width: 208px;
+		height: 35px;
+		transition: .3s all
+		&:hover
+			background: #2158DD;
+		&:active
+			background: #326CF9;
+			box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.1);
+.s-menu
+	position: fixed
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	display: none
+	z-index: 100
+	background: #1C1C1C;
+	padding: 94px 0
+	left: -100%
+	transition: .3s all
+	overflow-y: auto
+	&.active
+		left: 0
+	.s-header-menu
+		display: block
+		padding-right: 0
+		li + li
+			margin-top: 42px
+	.s-header-menu li:not(:last-child)
+		margin-right: 0
+	.s-header-button
+		display: none
+.s-home
+	padding-top: 75px
+	.wrap
+		position: relative
+	&-line
+		margin: 0 -15px
+
+	&-block
+		padding: 0 15px
+		&.block1
+			width: 60%
+		&.block2
+			width: 40%
+	&-cont
+		padding-top: 68px
+	&-title
+		font-style: normal;
+		font-weight: bold;
+		font-size: 72px;
+		line-height: 86px;
+		letter-spacing: 0.01em;
+		color: #E4E4E4;
+		letter-spacing: 1.1px
+	&-descr
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		line-height: 24px;
+		letter-spacing: 0.01em;
+		color: #E4E4E4;
+		padding-top: 19px
+	&-button
+		padding-top: 49px
+		.s-header-btn
+			max-width: 295px;
+			height: 50px;
+			width: 100%
+			font-size: 19.7398px;
+			line-height: 24px;
+			letter-spacing: 0.02em;
+	&-img
+		margin-left: -203px;
+		margin-top: -40px;
+		position: relative
+		height: 521px
+		&-cloud1
+			position: absolute
+			top: 0
+			right: 135px
+		&-cloud1
+			position: absolute
+			top: 0
+			right: 135px
+			transition: 1.5s all
+			&.active
+				right: 105px
+		&-cloud2
+			display: none
+		&-anim
+			position: absolute
+			right: 45px;
+			bottom: 1px;
+			animation-name: Fade1;
+			-webkit-animation-timing-function: linear;
+			animation-timing-function: linear;
+			-webkit-animation-iteration-count: infinite;
+			animation-iteration-count: infinite;
+			animation-duration: 4s;
+
+
+.s-about
+	position: relative
+	max-width: 1292px
+	margin: 0 auto
+	.wrap
+		position: relative
+		z-index: 3
+	&-inner
+		background-image: url("../img/about-bg.png")
+		background-position: center 0
+		background-repeat: no-repeat
+		position: relative
+		max-width: 1292px
+		margin: 0 auto
+		padding-top: 100px
+		padding-bottom: 100px
+		z-index: 2
+		&:after
+			content: ""
+			position: absolute
+			background: rgba(255, 250, 250, 0.07);
+			opacity: 0.9;
+			display: block
+			right: -20000px
+			width: 20000px
+			height: 100%
+			top: 0
+		&:before
+			content: ""
+			position: absolute
+			background: rgba(255, 250, 250, 0.07);
+			opacity: 0.9;
+			display: block
+			left: -20000px
+			width: 20000px
+			height: 100%
+			top: 0
+	&-img1
+		position: absolute
+		z-index: -1
+		top: -69px;
+		left: 102px;
+		display: block
+		width: 100%
+		right: 0
+		margin: 0 auto
+		img
+			margin: 0 auto
+			display: block
+	&-img2
+		position: absolute
+		z-index: -1
+		bottom: -92px;
+		left: 0;
+		display: block
+		width: 100%
+		right: 0
+		margin: 0 auto
+	
+	&-line
+		margin: 0 -15px
+	&-block
+		padding: 0 15px
+		width: 50%
+	&-cont
+		padding-top: 98px;
+		padding-left: 100px;
+	&-title
+		font-style: normal;
+		font-weight: bold;
+		font-size: 44px;
+		line-height: 45px;
+		letter-spacing: 0.01em;
+		color: #FFFFFF;
+	&-descr
+		padding-top: 21px
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 28px;
+		letter-spacing: 0.01em;
+		color: #E4E4E4;
+		max-width: 425px
+	&-subtitle
+		padding-top: 38px
+		font-style: normal;
+		font-weight: bold;
+		font-size: 28px;
+		line-height: 28px;
+		letter-spacing: 0.02em;
+		text-transform: uppercase;
+		color: #326CF9;
+		letter-spacing: 0.3px
+	&-descr1
+		color: #FFFFFF;
+		padding-top: 10px
+	&-img3
+		position: absolute
+		z-index: 0
+		right: -32px;
+		bottom: -81px;
+	&-nums
+		max-width: 539px;
+		width: 100%
+		&-inner
+			box-shadow: 0px 4px 43px rgba(0, 0, 0, 0.25);
+			background-image: url("../img/about-bg1.png")
+			border: 1px solid rgba(255, 255, 255, 0.1);
+			background-repeat: no-repeat
+			padding: 62px 80px 64px
+			position: relative
+			z-index: 2
+			background-size: cover
+		position: relative
+		&-list
+			li + li
+				padding-top: 42px
+		&-title
+			font-style: normal;
+			font-weight: bold;
+			font-size: 28px;
+			line-height: 90px;
+			letter-spacing: 0.04em;
+			color: #326CF9;
+			span
+				font-size: 80px;
+				line-height: 90px;
+				letter-spacing: 0.01em;
+		.s-about-descr
+			padding-top: 0
+			margin-top: -15px
+
+.s-types
+	padding-top: 100px
+	padding-bottom: 109px
+	&-inner
+
+	.wrap
+		position: relative
+	&-img
+		right: -138px;
+		position: absolute;
+		bottom: -219px;
+	.s-about-title
+		text-align: center
+	&-descr
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 28px;
+		text-align: center;
+		letter-spacing: 0.01em;
+		color: #E4E4E4;
+		padding-top: 20px
+		max-width: 570px;
+		margin: 0 auto
+	&-line
+		margin: 0 -15px
+		padding-top: 111px
+		margin-bottom: -86px
+	&-block
+		padding: 0 15px
+		width: 33.3%
+		padding-bottom: 86px
+	&-item
+		background: linear-gradient(107.95deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 250, 250, 0) 83.15%);
+		box-shadow: 0px 4px 43px rgba(0, 0, 0, 0.25);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		backdrop-filter: blur(15.4188px);
+		position: relative
+		padding: 92px 31px 34px
+		position: relative
+		height: 100%
+		display: -webkit-flex
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center
+		align-content: stretch;
+		flex-wrap: wrap;
+		min-height: 271px
+		&:hover
+			.s-types-item-bg
+				opacity: 1
+				visibility: visible
+			.s-types-item-cont1
+				opacity: 0
+				visibility: hidden
+			.s-types-item-cont2
+				opacity: 1
+				visibility: visible
+			.s-types-item-icon
+				img
+					filter: grayscale(0%);
+		&-bg
+			background: linear-gradient(107.95deg, #FFFFFF 0%, rgba(255, 250, 250, 0.8) 83.15%);
+			position: absolute
+			left: 0
+			top: 0
+			display: block
+			width: 100%
+			height: 100%
+			opacity: 0
+			visibility: hidden
+			transition: .3s all
+		&-icon
+			position: absolute
+			left: 30px;
+			top: -48px;
+			width: 112px
+			height: 112px
+			background: #326CF9;
+			border-radius: 50%
+			z-index: 2
+			img
+				filter: grayscale(100%);
+				transition: .3s all
+		&-cont1
+			display: block
+			position: relative
+			z-index: 2
+			transition: .3s all
+		&-cont2
+			position: absolute
+			left: 0
+			top: 0
+			display: block
+			opacity: 0
+			visibility: hidden
+			z-index: 2
+			padding: 79px 30px
+			transition: .3s all
+		&-title
+			font-style: normal;
+			font-weight: bold;
+			font-size: 36px;
+			line-height: 43px;
+			letter-spacing: 0.06em;
+			color: #FFFFFF;
+			display: block
+			letter-spacing: 1.3px
+		&-descr
+			padding-top: 16px
+			font-style: normal;
+			font-weight: normal;
+			font-size: 20px;
+			line-height: 140%;
+			letter-spacing: 0.01em;
+			color: #E5E5E5;
+			display: block
+		&-title1
+			font-style: normal;
+			font-weight: bold;
+			font-size: 24px;
+			line-height: 29px;
+			letter-spacing: 0.06em;
+			color: #222222;
+			display: block
+		&-descr1
+			font-style: normal;
+			font-weight: normal;
+			font-size: 15px;
+			line-height: 21px;
+			letter-spacing: 0.01em;
+			color: #2C2C2C;
+			padding-top: 17px
+			display: block
+			min-height: 105px;
+		&-link
+			padding-top: 11px
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 22px;
+			letter-spacing: 0.02em;
+			color: #326CF9
+			letter-spacing: 1px
+			.text
+				padding-right: 10px
+			.icon
+				margin-top: 2px
+
+.s-steps
+	padding: 100px 0
+	background-image: url("../img/steps-bg.png")
+	background-position: center 0
+	background-repeat: no-repeat
+	position: relative
+	max-width: 1292px
+	margin: 0 auto
+	.wrap
+		position: relative
+		z-index: 2
+	&:after
+		content: ""
+		position: absolute
+		background: rgba(255, 250, 250, 0.07);
+		opacity: 0.9;
+		display: block
+		right: -20000px
+		width: 20000px
+		height: 100%
+		top: 0
+	&:before
+		content: ""
+		position: absolute
+		background: rgba(255, 250, 250, 0.07);
+		opacity: 0.9;
+		display: block
+		left: -20000px
+		width: 20000px
+		height: 100%
+		top: 0
+	.s-about-title
+		text-align: center
+	&-descr
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 28px;
+		text-align: center;
+		letter-spacing: 0.01em;
+		color: #E4E4E4;
+		padding-top: 20px
+	&-list
+		position: relative
+		margin-top: 64px
+		padding-top: 31px
+		padding-bottom: 31px
+		li
+			&.active
+				.s-steps-item-icon1
+					background: #326CF9;
+			&:last-child
+				.s-steps-item-line
+					display: none
+		li + li
+			margin-top: 3px
+		&:before
+			content: ""
+			position: absolute
+			left: 0
+			top: 0
+			width: calc(50% - 15px)
+			height: 100%
+			background: linear-gradient(107.95deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 250, 250, 0) 83.15%);
+			box-shadow: 0px 4px 43px rgba(0, 0, 0, 0.25);
+			border: 1px solid rgba(255, 255, 255, 0.1);
+	&-item
+		margin: 0 -15px
+		position: relative
+		align-items: stretch
+		&-block
+			padding: 0 15px
+			width: 50%
+			position: relative
+		&-icon1
+			position: absolute
+			border: 1px solid #326CF9;
+			width: 15px;
+			height: 15px;
+			border-radius: 50%
+			background-color: #3a3939
+			right: 6px;
+			top: 40px;		
+			transition: .3s all
+		&-line
+			position: absolute
+			right: 13px;
+			top: 52px;
+			height: 100%
+			width: 1px
+			background-color: #326CF9
+		&-date
+			font-family: Mulish;
+			font-style: normal;
+			font-weight: 800;
+			font-size: 28px;
+			line-height: 90px;
+			text-align: right;
+			letter-spacing: 0.888889px;
+			color: #326CF9;
+			padding-right: 59px
+			.mobile
+				display: none
+		&-descr
+			font-style: normal;
+			font-weight: normal;
+			font-size: 15px;
+			line-height: 28px;
+			letter-spacing: 0.01em;
+			color: rgba(228,228,228,0.7);
+			padding-left: 20px
+			max-width: 398px
+			padding-top: 31px
+	position: relative
+	&-img
+		position: absolute
+		bottom: -110px;
+		right: 78px;
+.s-how
+	background-image: url("../img/how-bg.png")
+	background-repeat: no-repeat
+	background-position: center 0
+	position: relative
+	z-index: 2
+	max-width: 1292px
+	margin: 0 auto
+	background-color: #292929
+	&-inner
+		position: relative
+		padding: 100px 0 130px
+	&-img1
+		position: absolute
+		bottom: -85px
+		left: 81px;
+		right: 0
+		margin: 0 auto
+		z-index: -1
+	&:after
+		content: ""
+		position: absolute
+		background: rgba(40, 40, 40, 0.72);
+		display: block
+		right: -20000px
+		width: 20000px
+		height: 100%
+		top: 0
+	&:before
+		content: ""
+		position: absolute
+		background: rgba(40, 40, 40, 0.72);
+		display: block
+		left: -20000px
+		width: 20000px
+		height: 100%
+		top: 0
+	.s-about-title
+		text-align: center
+	.s-steps-descr
+		max-width: 570px;
+		margin: 0 auto
+	&-line
+		margin: 0 -15px
+		padding-top: 64px
+	&-block
+		padding: 0 15px
+		width: 33.3%
+	&-item
+		display: block
+		height: 100%
+		background: linear-gradient(0deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.02));
+		border: 1px solid rgba(255, 255, 255, 0.05);
+		transition: .3s all
+		&:hover
+			background: linear-gradient(0deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.02)), #1C1C1C;
+		&-img
+			display: block
+			img
+				width: 100%
+		&-cont
+			display: block
+			padding: 21px 19px 19px
+		&-cats
+			display: block
+		&-cat
+			background: rgba(255, 255, 255, 0.07);
+			border-radius: 4px;
+			height: 22px;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 12px;
+			line-height: 22px;
+			text-transform: uppercase;
+			font-feature-settings: 'salt' on, 'liga' off;
+			color: #B6B6B6;
+			display: inline-flex
+			padding: 0 7px
+		&-title
+			display: block
+			font-style: normal;
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 24px;
+			font-feature-settings: 'salt' on, 'liga' off;
+			color: #FFFFFF;
+			padding-top: 14px
+		&-descr
+			padding-top: 13px
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 22px;
+			font-feature-settings: 'salt' on, 'liga' off;
+			color: #B6B6B6;
+			display: block
+
+
+.s-form
+	background-image: url("../img/form-bg.png")
+	background-position: left 0
+	background-repeat: no-repeat
+	position: relative
+	max-width: 1292px
+	margin: 0 auto
+	padding: 100px 0
+	z-index: 3
+	
+	&:after
+		content: ""
+		position: absolute
+		background: rgba(255, 250, 250, 0.07);
+		opacity: 0.9;
+		display: block
+		right: -20000px
+		width: 20000px
+		height: 100%
+		top: 0
+	&:before
+		content: ""
+		position: absolute
+		background: rgba(255, 250, 250, 0.07);
+		opacity: 0.9;
+		display: block
+		left: -20000px
+		width: 20000px
+		height: 100%
+		top: 0
+	.s-about-title
+		text-align: center
+	.s-steps-descr
+		max-width: 721px;
+		margin: 0 auto
+	&-img
+		position: absolute
+		bottom: -97px;
+		right: 16px;
+		z-index: -1
+	&-block
+		margin-top: 65px
+		background-image: url("../img/form-bg1.png")
+		background-position: right bottom
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		box-shadow: 0px 4px 43px rgba(0, 0, 0, 0.25);
+		position: relative
+		background-size: cover
+		&-steps
+			display: none
+		&-next
+			display: none
+		&-block
+			padding: 0 15px
+
+			&.block1
+				background: #326CF9;
+				width: 40%
+
+			&.block2
+				width: 60%
+		&-cont1
+			padding-top: 69px;
+			padding-left: 84px;
+			padding-right: 15px
+			height: 100%
+		&-cont2
+			padding-top: 69px;
+			padding-left: 17px;
+			padding-right: 82px;
+			height: 100%
+			padding-bottom: 63px
+		&-input
+			&.error
+				input
+					border-color: #F4603A
+			&.correct
+				position: relative
+				&:after
+					content: ""
+					position: absolute
+					right: 0
+					bottom: 15px
+					background-image: url("../img/check.svg")
+					display: block
+					width: 16px
+					height: 16px
+				input
+					border-color: #FFFFFF;
+			+ .s-form-block-input
+				margin-top: 37px
+			&-label
+				font-style: normal;
+				font-weight: normal;
+				font-size: 24px;
+				line-height: 29px;
+				color: #E5E5E5;
+				letter-spacing: 0.5px
+			.select2-container
+				display: block !important
+				width: 100% !important
+			.select2-container--default .select2-selection--single
+				background-color: transparent
+				border: 0
+				border-bottom: 2px solid #C4C4C4
+				height: 53px
+				border-radius: 0
+			.select2-container .select2-selection--single .select2-selection__rendered
+				font-style: normal;
+				font-weight: normal;
+				font-size: 18px;
+				line-height: 22px;
+				color: #fff;
+				padding: 0 5px
+				padding-top: 10px
+				padding-right: 40px
+			.select2-container--default .select2-selection--single .select2-selection__placeholder
+				color: #929292;
+			.select2-container--default .select2-selection--single .select2-selection__arrow
+				background-image: url("../img/arrow-down.svg")
+				width: 17px
+				height: 8px
+				position: absolute
+				top: 20px;
+				right: 11px;
+				transform: rotate(0deg)
+				transition: .3s all
+			.select2-container--default .select2-selection--single .select2-selection__arrow b
+				display: none
+			.select2-container--open .select2-selection--single .select2-selection__arrow
+				transform: rotate(180deg)
+				
+			input
+				border: 0
+				display: block
+				width: 100%
+				border-bottom: 2px solid #C4C4C4
+				font-style: normal;
+				font-weight: normal;
+				font-size: 18px;
+				line-height: 53px;
+				color: #FFFFFF
+				background-color: transparent
+				height: 53px
+				padding: 0 5px
+				border-radius: 0
+			input:-moz-placeholder 
+				opacity: 1
+				color: #B5B5B5;
+			input::-moz-placeholder 
+				opacity: 1
+				color: #B5B5B5;
+			input:-ms-input-placeholder 
+				opacity: 1
+				color: #B5B5B5;
+			input::-webkit-input-placeholder 
+				opacity: 1
+				color: #B5B5B5;
+			textarea
+				border: 0
+				display: block
+				width: 100%
+				border-bottom: 2px solid #C4C4C4
+				font-style: normal;
+				font-weight: normal;
+				font-size: 18px;
+				line-height: 22px;
+				color: #FFFFFF
+				background-color: transparent
+				height: 75px
+				padding: 12px 5px
+				font-family: Lab Grotesque;
+				resize: none
+				overflow: auto
+				border-radius: 0
+			textarea:-moz-placeholder 
+				opacity: 1
+				color: #B5B5B5;
+			textarea::-moz-placeholder 
+				opacity: 1
+				color: #B5B5B5;
+			textarea:-ms-input-placeholder 
+				opacity: 1
+				color: #B5B5B5;
+			textarea::-webkit-input-placeholder 
+				opacity: 1
+				color: #B5B5B5;
+	&-descr
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 19px;
+		color: #929292
+		padding-top: 36px
+	&-button
+		padding-top: 43px
+		.s-header-btn
+			border: 0
+			max-width: 234px;
+			height: 57px;
+			width: 100%
+			font-size: 18px;
+			line-height: 22px;
+			cursor: pointer
+.select2-dropdown
+	background: #333333
+	border: 0
+	border-radius: 0
+.select2-results__option
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 22px;
+	color: #FFFFFF
+	padding: 6px 5px
+.select2-container--default .select2-results__option--highlighted[aria-selected]
+	background: #326CF9;
+.select2-container--default .select2-results__option[aria-selected="true"]
+	background: #326CF9;
+.s-footer
+	padding-top: 80px
+	padding-bottom: 80px
+	&-copy
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 30px;
+		color: rgba(247,246,245,0.9)
+		text-align: center
+		padding-top: 47px
+
+@import responsive
+
+
+@include respond-to(desktop)
+	.s-header-menu li:not(:last-child)
+		margin-right: 35px
+	.s-header-menu
+		padding-right: 42px
+	.s-home-cont
+		padding-top: 0
+	.s-home-title
+		font-size: 61px
+		line-height: 76px
+	.s-home-img
+		margin-left: -250px
+	.s-home-img-anim
+		right: auto
+		left: 321px;
+	.s-about-cont
+		padding-left: 30px
+	.s-about-img2
+		img
+			margin-left: -52px
+	.s-types-item-icon
+		width: 90px
+		height: 90px
+	.s-types-item-icon img
+		transform: scale(0.8)
+	.s-types-item
+		padding-top: 60px
+	.s-types-item-cont2
+		padding: 60px 30px
+	.s-steps-img
+		right: 0
+		left: 20px
+		width: 100%
+		text-align: right
+	.s-how
+		background: rgba(40, 40, 40, 0.72);
+		z-index: 0
+	.s-form-block-cont1
+		padding-left: 15px
+	.s-form-block-cont2
+		padding-right: 15px
+
+@include respond-to(tablet-large)
+	.wrap
+		padding: 0 60px
+	.s-header-menu
+		display: none
+	.s-header
+		padding: 20px 0
+	.s-home-title
+		font-size: 26px;
+		line-height: 31px;
+		letter-spacing: 0.01em;
+		br
+			display: none
+	.s-home-descr
+		font-size: 18px;
+		line-height: 22px;
+		letter-spacing: 0.01em;
+		padding-top: 14px
+		max-width: 300px
+	.s-home-button
+		padding-top: 28px
+	.s-home-button .s-header-btn
+		max-width: 228px
+		height: 40px;
+		font-size: 15px;
+		line-height: 18px;
+		letter-spacing: 0.02em;
+	.s-home-img
+		margin-top: -82px
+		margin-left: -73px
+	.s-home-img-cloud1
+		right: 24px
+	.s-home-img
+		height: 312px
+	.s-home-img-anim
+		bottom: 30px
+		left: 132px
+	.s-about-cont
+		padding-top: 0
+		padding-left: 8px
+	.s-about-inner
+		padding-top: 70px
+		padding-bottom: 70px
+		background-image: url("../img/about-bg-md.png")
+		background-position: 0 0
+		max-width: 100%
+		margin-left: 0
+	.s-about-block
+		width: 100%
+		+ .s-about-block
+			padding-top: 38px
+	.s-about-descr
+		max-width: 100%
+	.s-about-nums
+		max-width: 100%
+	.s-about-nums-inner
+		padding: 37px 33px 34px;
+	.s-about-nums-list
+		display: -webkit-flex
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		align-content: stretch;
+		flex-wrap: wrap;
+		margin: 0 -5px
+		li
+			width: 50%
+			padding: 0 5px
+	.s-about-nums-list li + li
+		padding-top: 0
+	.s-about-img2
+		left: -78px
+	.s-about-img3
+		right: -55px;
+		bottom: -66px;
+	.s-about-img1 img
+		margin-left: 0
+	.s-about-img1
+		right: auto
+		left: 407px;
+		top: -33px
+	.s-about
+		max-width: inherit
+	.s-about-inner::after
+		right: auto
+		left: 768px
+	.s-types
+		padding-top: 72px
+		padding-bottom: 95px
+	.s-types-block
+		width: 50%
+		padding: 0 10px
+	.s-types-line
+		padding-top: 96px
+		margin: 0 -10px
+	.s-types-item-icon
+		width: 112px
+		height: 112px
+	.s-types-item-icon img
+		transform: scale(1);
+	.s-types-item
+		padding: 92px 20px 34px 31px
+	.s-types-item-cont2
+		padding: 71px 30px
+	.s-types-item-descr1
+		padding-top: 12px
+	.s-types-block
+		padding-bottom: 76px
+	.s-types-item-link
+		padding-top: 14px
+	.s-types-line
+		margin-bottom: -76px
+	.s-types-img
+		bottom: -231px
+	.s-steps
+		padding: 74px 0 75px
+		background-image: url("../img/steps-bg-md.png")
+		max-width: 100%
+		background-position: right 0
+		&:before
+			left: auto
+			right: 768px
+	.s-steps-list
+		margin-top: 47px
+		padding-top: 5px
+		padding-bottom: 11px
+	.s-steps-item-date
+		font-size: 19.7818px;
+		line-height: 64px;
+		letter-spacing: 0.627994px;
+		padding-right: 16px
+	.s-steps-item-descr
+		padding-top: 22px
+		padding-left: 0
+	.s-steps-list li + li
+		margin-top: 10px
+	.s-steps-item-icon1
+		top: 27px
+	.s-steps-item-line
+		top: 37px
+	.s-how-inner
+		padding-top: 70px
+	.s-steps-img
+		right: auto
+		margin: 0
+		left: 625px;
+		width: auto
+		bottom: -82px;
+	.s-how-inner
+		background-image: url("../img/how-bg-md.png")
+		margin-left: 0
+		position: relative
+		z-index: 2
+		background-repeat: no-repeat
+		padding-bottom: 70px
+		&:after
+			left: 768px
+			right: auto
+			margin-left: 0
+	.s-how-block
+		width: 50%
+		padding: 0 10px
+		padding-bottom: 15px
+	.s-how-line
+		padding-top: 47px
+		margin: 0 -10px -15px
+		position: relative
+		z-index: 2
+	.s-how-item-img
+		img
+			width: 100%
+	.s-home-img-anim
+		animation-name: Fade1-md
+		animation-duration: 3s;
+	.s-form
+		padding-top: 76px
+		background-image: url("../img/form-bg-md.png")
+		background-position: left 0
+		&:after
+			left: 768px
+			right: auto
+	.s-how-img1
+		left: 639px
+	.s-form-block
+		margin: 50px -60px 0
+	.s-form-block-cont1
+		padding-right: 5px
+		padding-left: 53px
+		padding-top: 44px
+	.s-form-block-input-label
+		font-size: 16px;
+		line-height: 19px;
+	.s-form-block-input input
+		font-size: 12px;
+		line-height: 36px;
+		height: 36px
+		border-bottom: 1px solid #C4C4C4;
+		padding: 0
+	.s-form-block-input + .s-form-block-input
+		margin-top: 23px
+	.s-form-block-input textarea
+		font-size: 12px;
+		line-height: 14px;
+		padding: 9px 0
+		border-bottom: 1px solid #C4C4C4;
+		height: 48px
+	.s-form-block-cont2
+		padding-right: 50px
+		padding-top: 44px;
+		padding-left: 5px;
+		font-size: 12px;
+		padding-bottom: 41px
+	.s-form-block-input .select2-container--default .select2-selection--single
+		height: 36px;
+		border-bottom: 1px solid #C4C4C4;
+	.s-form-block-input .select2-container .select2-selection--single .select2-selection__rendered
+		font-size: 12px
+		line-height: 36px
+		padding: 0
+	.s-form-block-input .select2-container--default .select2-selection--single .select2-selection__arrow
+		background-image: url("../img/arrow-down-md.svg")
+		width: 12px
+		height: 7px
+		top: 15px
+		right: 7px
+	.select2-results__option
+		font-size: 15px
+		line-height: 20px
+		padding: 6px 3px
+	.s-form-descr
+		font-size: 11px;
+		line-height: 13px;
+		padding-top: 27px
+	.s-form-button
+		padding-top: 14px
+	.s-form-button .s-header-btn
+		max-width: 153.21px;
+		height: 37.32px;
+		font-size: 12px;
+		line-height: 14px;
+		letter-spacing: 0.02em;
+	.s-form-img
+		bottom: -65px
+	.s-footer
+		padding-top: 17px
+		padding-bottom: 17px
+		.s-header-logo
+			padding-top: 0
+	.s-footer .s-header-inner
+		align-items: flex-start
+	.s-footer-copy
+		text-align: left;
+		padding-top: 12px;
+	.s-header-toggle
+		display: block
+	.s-menu
+		display: block
+
+@include respond-to(tablet)
+	.wrap
+		padding: 0 20px
+	.s-home
+		padding-top: 40px
+	.s-home-img
+		margin-top: -15px
+	.s-about-inner
+		background-color: #393939
+		background-size: cover
+	.s-about-nums-title
+		line-height: 1.2
+		span
+			line-height: 1
+	.s-about-nums .s-about-descr
+		margin-top: 15px
+	.s-steps
+		background-size: cover
+	.s-steps-item-date
+		line-height: 1.2
+		padding-top: 24px
+	.s-steps-img
+		left: auto
+		right: 47px;
+		bottom: -82px;
+	.s-how-inner
+		background-size: cover
+		background-position: right 0
+
+@include respond-to(mobile)
+	.s-header-button
+		display: none
+	.s-header
+		padding: 18px 0
+	.s-header-toggle
+		width: 23px
+		margin-top: -1px
+		margin-right: 3px
+	.s-header-toggle .icon-menu-burger
+		height: 2px
+		width: 23px
+	.s-header-toggle .icon-menu-burger::before
+		top: -6px
+	.s-header-toggle .icon-menu-burger::after
+		bottom: -6px
+	.s-home-block.block2
+		width: 100%
+		order: 1
+	.s-home-block.block1
+		width: 100%
+		order: 2
+	.s-home-img
+		width: 320px
+		margin: 0 auto
+		height: 273px
+	.s-home
+		padding-top: 0
+		padding-bottom: 65px
+	.s-home-img-anim
+		bottom: 33px;
+		left: 133px;
+	.s-home-img-cloud1
+		top: 24px;
+		right: 37px;
+	.s-home-img-cloud2
+		display: block
+		position: absolute
+		left: 34px;
+		bottom: 23px;
+	.s-about-img1
+		display: none
+	.s-about-title
+		font-size: 25px;
+		line-height: 36px;
+		letter-spacing: 0.01em;
+	.s-about-inner
+		padding-top: 64px
+	.s-about-cont
+		padding-left: 0
+	.s-about-descr
+		font-size: 14px;
+		line-height: 24px;
+		letter-spacing: 0.01em;
+		padding-top: 8px
+	.s-about-inner
+		background-image: url("../img/about-bg-sm.png")
+		background-color: #393939
+		background-position: 0 bottom
+		padding-bottom: 64px
+		&:after
+			background: #393939
+			left: 360px
+			right: auto
+			opacity: 1
+
+	.s-about-subtitle
+		font-size: 23px;
+		line-height: 24px;
+		letter-spacing: 0.1px
+		padding-top: 33px
+	.s-about-block + .s-about-block
+		padding-top: 30px
+	.s-about-nums-title span
+		font-size: 48px;
+		letter-spacing: 0.01em;
+	.s-about-nums-list li
+		width: 100%
+	.s-about-nums-inner
+		padding: 33px 26px 27px
+		background-image: url("../img/about-bg1-sm.png");
+		background-position: right bottom
+		background-size: auto
+		background-color: #3f3f3f
+	.s-about-nums-title
+		font-size: 26.1648px;
+		line-height: 1.2
+		letter-spacing: 0.04em;
+		span
+			line-height: 1
+	.s-about-nums .s-about-descr
+		margin-top: 10px
+	.s-about-nums-list li + li
+		padding-top: 32px
+	.s-about-img3
+		right: -18px;
+		bottom: -44px;
+	.s-about-img2
+		left: -30px;
+		bottom: -65px;
+	.s-types
+		padding-top: 60px
+	.s-types-descr
+		font-size: 14px;
+		line-height: 150%;
+		letter-spacing: 0.01em;
+		padding-top: 8px
+	.s-types-block
+		width: 100%
+	.s-types-item-title
+		font-size: 23px;
+		line-height: 28px;
+		letter-spacing: 0.06em;
+	.s-types-item-descr
+		font-size: 16px;
+		line-height: 140%;
+		letter-spacing: 0.01em;
+	.s-types-item-title1
+		font-size: 18px;
+		line-height: 22px;
+		letter-spacing: 0.06em;
+	.s-types-item-link
+		padding-top: 16px
+	.s-types-img
+		right: -56px;
+		bottom: -93px;
+	.s-steps
+		background-image: url("../img/steps-bg-sm.png")
+		background-position: right 0
+		background-size: auto
+		padding-top: 59px
+		background-size: cover
+		padding-bottom: 64px
+		&:before
+			right: 360px
+			left: auto
+			background-color: #393939
+	.s-steps-descr
+		font-size: 15px;
+		line-height: 150%;
+		letter-spacing: 0.01em;
+		padding-top: 9px
+	.s-steps-list
+		margin-top: 23px
+	.s-steps-item-block
+		padding: 0
+		&:nth-child(1)
+			width: 186px
+		&:nth-child(2)
+			width: calc(100% - 186px)
+	.s-steps-item-date
+		font-size: 14px;
+		line-height: 33px;
+		letter-spacing: -0.01em;
+	.s-steps-list::before
+		width: 50%
+	.s-steps-item-date
+		padding-right: 22px
+		.desk
+			display: none
+		.mobile
+			display: block
+	.s-steps-item-descr
+		font-size: 14px;
+		line-height: 20px;
+		letter-spacing: 0.01em;
+		padding-top: 8px;
+		padding-left: 0;
+		margin-left: 0px;
+		padding-right: 22px;
+	.s-steps-item-icon1
+		width: 8px;
+		height: 8px;
+		top: 12px;
+		right: 5px
+	.s-steps-item-line
+		top: 20px;
+		height: calc(100% + 15px);
+		right: 9px
+	.s-steps-list li + li
+		margin-top: 14px
+	.s-steps-list li:last-child
+		.s-steps-item-line
+			height: 0
+	.s-steps-list::before
+		width: 160px
+		box-shadow: 0px 2.05488px 22.0899px rgba(0, 0, 0, 0.25);
+	.s-steps-item
+		align-items: stretch
+	.s-steps-item-date
+		padding-top: 0
+	.s-steps-img
+		right: 0
+		bottom: -34px
+	.s-how-inner
+		padding-top: 60px
+		padding-bottom: 50px
+		background-size: cover
+		background-image: url("../img/how-bg-sm.png")
+		background-position: right 0
+	.s-how-line
+		padding-top: 45px
+	.s-how-block
+		width: 100%
+	.s-how-item-cont
+		padding: 19px 23px 18px;
+	.s-form
+		padding-top: 68px
+	.s-form .s-steps-descr
+		font-size: 14px;
+		line-height: 150%;
+		letter-spacing: 0.01em;
+	.s-form-block
+		margin: 28px 0px 0
+	.s-form-block-block.block1
+		width: 100%
+	.s-form-block-block.block2
+		width: 100%
+		display: none
+	.s-form
+		background-image: url("../img/form-bg-sm.png")
+		background-position: right 0
+		background-size: cover
+		padding-bottom: 129px
+		&:after
+			display: block
+			content: ""
+			background: #2C2C2C;
+			height: 65px
+			opacity: 1
+			position: absolute
+			left: 0
+			right: auto
+			top: auto
+			bottom: 0
+	.s-footer
+		background-color: #282828
+	.s-how-img1
+		left: auto
+		right: 0
+		bottom: -43px;
+	.s-form-block-steps
+		font-family: Lab Grotesque;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 14px;
+		color: #B5B5B5;
+		width: 100%
+		li
+			margin-right: 5px
+			&.active
+				color: #fff
+			&:after
+				content: "/"
+				padding-left: 5px
+			&:last-child
+				margin-right: 0
+				&:after
+					display: none
+	.s-form-block-inner
+		background: #326CF9;
+		padding: 17px 10px 0
+	.s-form-block-cont1
+		height: auto
+		padding: 0
+		padding-top: 11px
+		padding-bottom: 38px
+	.s-form-block-input-label
+		font-size: 14px;
+		line-height: 17px;
+	.s-form-block-next
+		display: block
+		padding-top: 41px
+		&-link
+			width: 160px;
+			height: 38px;
+			background: #FFFFFF;
+			border-radius: 4px;
+			margin: 0 auto
+			font-style: normal;
+			font-weight: normal;
+			font-size: 12px;
+			line-height: 14px;
+			letter-spacing: 0.02em;
+			text-transform: uppercase;
+			color: #2C2C2C;
+			transition: .3s all
+			&:hover
+				background-color: rgba(255,255,255,0.8)
+	.s-footer .s-header-logo
+		text-align: center
+		width: 100%
+		display: block
+		a
+			display: inline
+	.s-footer
+		padding: 36px 0
+	.s-footer-copy
+		text-align: center
+		font-size: 12px;
+		line-height: 30px;
+		padding-top: 15px
+	.s-form-img
+		right: -67px;
+		z-index: 5;
+		bottom: -134px;
+	.s-form-block-steps
+		display: flex
+	.s-header-toggle.active .icon-menu-burger
+		height: 2px
+	.s-menu .s-header-menu li + li
+		margin-top: 38px
+	.s-menu .s-header-button
+		display: block
+		padding-top: 39px
+		.s-header-btn
+			width: 237px
+	.s-form-block-cont2
+		padding-right: 0;
+		padding-top: 11px;
+		padding-left: 0px;
+	.s-form-button 
+		padding-top: 33px
+		.s-header-btn
+			width: 160px;
+			height: 38px;
+			background: #FFFFFF;
+			border-radius: 4px;
+			margin: 0 auto
+			font-style: normal;
+			font-weight: normal;
+			font-size: 12px;
+			line-height: 14px;
+			letter-spacing: 0.02em;
+			text-transform: uppercase;
+			color: #2C2C2C;
+			transition: .3s all
+			&:hover, &:active
+				background-color: rgba(255,255,255,0.8)
+	.select2-results__option
+		font-size: 11.7852px;
+		line-height: 14px;
+		padding: 5px 3px;
+
+
+
+@include respond-to(mobile2)
+	.s-steps-item-block:nth-child(1)
+		width: 160px
+	.s-steps-item-block:nth-child(2)
+		width: calc(100% - 160px)
+	.s-steps-list::before
+		width: 134px
+
+		

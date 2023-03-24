@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "Lab Grotesque";
+    src: url("../fonts/labgrotesque-bold.eot"); /* IE9 */
+    src: url("../fonts/labgrotesque-bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/labgrotesque-bold.woff") format("woff"), /* chrome, firefox */
+    url("../fonts/labgrotesque-bold.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("../fonts/labgrotesque-bold.svg#Lab Grotesque") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+
+@font-face {
+    font-family: "Lab Grotesque";
+    src: url("../fonts/labgrotesque-medium.eot"); /* IE9 */
+    src: url("../fonts/labgrotesque-medium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/labgrotesque-medium.woff") format("woff"), /* chrome, firefox */
+    url("../fonts/labgrotesque-medium.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("../fonts/labgrotesque-medium.svg#Lab Grotesque") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: 500;
+}
+
+
+
+@font-face {
+    font-family: "Lab Grotesque";
+    src: url("../fonts/labgrotesque-regular.eot"); /* IE9 */
+    src: url("../fonts/labgrotesque-regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/labgrotesque-regular.woff") format("woff"), /* chrome, firefox */
+    url("../fonts/labgrotesque-regular.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("../fonts/labgrotesque-regular.svg#Lab Grotesque") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: 400;
+}
+
+
