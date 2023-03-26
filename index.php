@@ -498,7 +498,7 @@
 				<div class="s-types-map">
 					<div class="s-types-table stt-1">
 						<p class="s-types-table__title"> Создать индивидуальный образовательный проект </p>
-						<p class="s-types-table__text">Создать <span style="font-weight: bold;">индивидуальный образовательный проект</span> для вашей компании и подтолкнуть карьеру на новый уровеньт </p>
+						<p class="s-types-table__text">Создать <span style="font-weight: bold;">индивидуальный образовательный проект</span> для вашей компании и подтолкнуть карьеру на новый уровень </p>
 						
 					</div>
 					<div class="s-types-table stt-2">
@@ -1952,6 +1952,15 @@
 											<input required type="text" name="name" placeholder="Имя, фамилия">
 	
 										</div>
+
+
+										<div class="s-form-block-input">
+
+											<div class="s-form-block-input-label">Должность</div>
+
+											<input required type="text" name="position" placeholder="Директор">
+
+										</div>
 	
 										<div class="s-form-block-input s-form-block-input__company">
 	
@@ -1973,7 +1982,7 @@
 	
 											<div class="s-form-block-input-label">Название компании</div>
 
-											<textarea  name="company-name" placeholder="Компания" cols="30" rows="5"></textarea>
+											<input  name="company-name" placeholder="Компания"/>
 
 								
 
@@ -1999,7 +2008,7 @@
 	
 											<div class="s-form-block-input-label">Город</div>
 	
-											<input required name="city" placeholder="Москва" cols="30" rows="5"></input>
+											<input required name="city" placeholder="Москва"/>
 	
 										</div>
 	
@@ -2015,7 +2024,7 @@
 	
 											<div class="s-form-block-input-label">Телефон</div>
 	
-											<input required type="text" name="phone" placeholder="+7 (999) 999 99 99" minlength="10">
+											<input required pattern=".{18,}" type="text" name="phone" class="js-phone-valid" placeholder="+7 (999) 999 99 99" minlength="18">
 	
 										</div>
 										<div class="g-recaptcha" data-sitekey="6LeldXsjAAAAANbV0jDMSYQ8roM72YzqIiQrjCz7"></div>
@@ -2089,7 +2098,7 @@
 	
 											<div class="s-form-block-input-label">Количество сотрудников в организации</div>
 	
-											<input required type="text" name="number" placeholder="1">
+											<input required type="number" name="number" placeholder="1" maxlength="20">
 	
 										</div>
 	
@@ -2099,6 +2108,11 @@
 	
 										</div>
 										<div class="text-danger" id="recaptchaError"></div>
+										<div class="s-form-button">
+
+											<a href="#" class="s-form-block-prev-link s-header-btn flex flexcenter flexalcenter"><span>Назад</span></a>
+
+										</div>
 										<div class="s-form-button">
 	
 											<button type="submit" class="s-header-btn flex flexcenter flexalcenter"><span>Отправить</span></button>

@@ -25,26 +25,31 @@
       } else {
               // если форма без ошибок
 
-              // собираем данные из формы
-              $message .= $_POST['name']; 
+              // собираем данные из формыя
+              $message  .= "Имя: ".$_POST['name'];
               $message  .= "<br />";
-              $message  .= $_POST['company'] ;
+              $message  .= "Должность: ".$_POST['position'] ;
               $message  .= "<br />";
-              $message  .= $_POST['city'];
+              $message  .= "Тариф: ".$_POST['company'] ;
               $message  .= "<br />";
-              $message  .= $_POST['email'];
+              $message  .= ($_POST['company'] == 'Для компаний') ? 'Название компании: '.$_POST['company-name'] : '' ;
+              $message  .= ($_POST['company'] == 'Для компаний') ? "<br />" : '' ;
+              $message  .= ($_POST['company'] == 'Для компаний') ? 'Диплом: '.$_POST['certificate']."<br />" : '' ;
+              $message  .= "Город: ".$_POST['city'];
               $message  .= "<br />";
-              $message  .= $_POST['phone'];
+              $message  .= "Email: ".$_POST['email'];
               $message  .= "<br />";
-              $message  .= $_POST['selecttype'];
+              $message  .= "Телефон: ".$_POST['phone'];
               $message  .= "<br />";
-              $message  .= $_POST['project'];
+              $message  .= "Направление: ".$_POST['selecttype'];
               $message  .= "<br />";
-              $message  .= $_POST['idea'];
+              $message  .= "Описание бизнес-задачи: ".$_POST['project'];
               $message  .= "<br />";
-              $message  .= $_POST['type'];
+              $message  .= "Суть проекта: ".$_POST['idea'];
               $message  .= "<br />";
-              $message  .= $_POST['number'];
+              $message  .= "Отрасль компании: ".$_POST['type'];
+              $message  .= "<br />";
+              $message  .= "Кол-во сотрудников: ".$_POST['number'];
               send_mail($message); // отправим письмо
               // выведем сообщение об успехе
               $msg_box = "Ok";
@@ -72,6 +77,7 @@
 	    
         // почта, на которую придет письмо
         $mail_to  = 'kbulava@action-media.ru' . ', ';
+        $mail_to .= 'TheMarchell0@yandex.ru' . ', ';
 	$mail_to .= 'accelerator@action-media.ru' . ', ';	
 	$mail_to .= 'tmrakhmanov@gmail.com' . ', ';// обратите внимание на запятую
         $mail_to .= 'thedickst@gmail.com';

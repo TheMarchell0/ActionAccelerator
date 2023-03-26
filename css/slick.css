@@ -152,4 +152,5 @@
     .slick-track {
         height: 460px;
     }
+    .s-box-1::after{width: 156px;}
 }

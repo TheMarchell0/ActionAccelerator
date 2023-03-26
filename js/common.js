@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded",function(){
 
 		    });
 
-		$('input[name="phone"]').inputmask('+7 (999) 999-99-99'); 
+		/*$('input[name="phone"]').inputmask('+7 (999) 999-99-99');*/
 
 		 $(".js-select").select2({
 
@@ -148,6 +148,22 @@ $(".js-select-3").select2({
 
 	});
 
+    $('.s-form-block-prev-link').click(function() {
+
+        $(this).closest('.s-form-block-block.block2').hide();
+
+        $('.s-form-block-block.block1').show();
+
+        let block = $('.s-form-block-steps li.active');
+
+        $('.s-form-block-steps li').removeClass("active");
+
+        block.prev().addClass("active");
+
+        return false;
+
+    });
+
 		  $(".s-form-block-input textarea").each(function() { 
 
     if($(this).val() === ""){
@@ -236,9 +252,9 @@ let phone = $(this).closest('.s-form-block-input.phone').find('input').val();
 
         } else{
 
-  $(this).closest('.s-form-block-input').removeClass('error'); 	
+            $(this).closest('.s-form-block-input').removeClass('error');
 
-$(this).closest('.s-form-block-input').addClass('correct');
+            $(this).closest('.s-form-block-input').addClass('correct');
 
     	}
 
@@ -312,9 +328,9 @@ $(this).closest('.s-form-block-input').addClass('correct');
 
 let phone = $(this).closest('.s-form-block-input.phone').find('input').val();
 
-          let valueWithoutMaskChars = phone.replace(/\D+/g, '');
+          /*let valueWithoutMaskChars = phone.replace(/\D+/g, '');*/
 
-        if(valueWithoutMaskChars.length <= 10){
+        if(phone.length <= 18){
 
         	  $(this).closest('.s-form-block-input').removeClass('correct'); 
 
@@ -448,7 +464,7 @@ let scene1 = gsap.timeline();
 
         trigger: ".s-about",
 
-        pin: true,
+        /* pin: true,*/
 
     scrub:2,
 
@@ -466,7 +482,7 @@ let scene1 = gsap.timeline();
 
         trigger: ".s-about",
 
-        pin: true,
+        /* pin: true,*/
 
     scrub:2,
 
@@ -504,7 +520,7 @@ let scene1 = gsap.timeline();
 
         trigger: ".s-types",
 
-        pin: true,
+        /* pin: true,*/
 
     scrub:2,
 
@@ -567,7 +583,7 @@ let scene1 = gsap.timeline();
 
         trigger: ".s-how-inner",
 
-        pin: true,
+/*        /* pin: true,*/
 
     scrub:2,
 
@@ -597,7 +613,7 @@ ScrollTrigger.create({
 
   trigger: ".s-how",
 
-  pin: true,
+  /* pin: true,*/
 
   scrub:2,
 
@@ -627,7 +643,7 @@ ScrollTrigger.create({
 
   trigger: ".s-about-inner",
 
-  pin: true,
+  /* pin: true,*/
 
   scrub:2,
 
@@ -642,7 +658,7 @@ ScrollTrigger.create({
 
   trigger: ".s-about-inner",
 
-  pin: true,
+  /* pin: true,*/
 
   scrub:2,
 
@@ -657,7 +673,7 @@ ScrollTrigger.create({
 
   trigger: ".s-about-inner",
 
-  pin: true,
+  /* pin: true,*/
 
   scrub:2,
 
@@ -747,3 +763,40 @@ $('#hover-s-how-2').mouseenter(function() {
   $('#s-how-price').text("Бесплатно");
   $('#s-how-price').css('color' , '#fff')
 })
+
+window.addEventListener("DOMContentLoaded", function() {
+    [].forEach.call( document.querySelectorAll('.js-phone-valid'), function(input) {
+        var keyCode;
+        function mask(event) {
+            event.keyCode && (keyCode = event.keyCode);
+            var pos = this.selectionStart;
+            if (pos < 3) event.preventDefault();
+            var matrix = "+7 (___) ___-__-__",
+                i = 0,
+                def = matrix.replace(/\D/g, ""),
+                val = this.value.replace(/\D/g, ""),
+                new_value = matrix.replace(/[_\d]/g, function(a) {
+                    return i < val.length ? val.charAt(i++) || def.charAt(i) : a
+                });
+            i = new_value.indexOf("_");
+            if (i != -1) {
+                i < 5 && (i = 3);
+                new_value = new_value.slice(0, i)
+            }
+            var reg = matrix.substr(0, this.value.length).replace(/_+/g,
+                function(a) {
+                    return "\\d{1," + a.length + "}"
+                }).replace(/[+()]/g, "\\$&");
+            reg = new RegExp("^" + reg + "$");
+            if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) this.value = new_value;
+            if (event.type == "blur" && this.value.length < 5)  this.value = ""
+        }
+
+        input.addEventListener("input", mask, false);
+        input.addEventListener("focus", mask, false);
+        input.addEventListener("blur", mask, false);
+        input.addEventListener("keydown", mask, false)
+
+    });
+
+});

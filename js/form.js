@@ -6,11 +6,13 @@ $(".popup__close").click(() => {
 $(".clickForm").click(() => {
 
   $(".popup-form").addClass('popup__opened')
+    $('html, body').css('overflow', 'hidden');
 
 })
 $(".popup__close").click(() => {
 
   $(".popup-form").removeClass('popup__opened')
+    $('html, body').css('overflow', '');
   $('#main-form')[0].reset()
   $(".text-danger").html('')
   $(".s-form-block-input input").each(function() { 
@@ -99,6 +101,7 @@ $(document).ready(function(){
                       // yaCounterXXXXXXXX.reachGoal('order');
                       // ga('send', 'event', 'form', 'order');
                       $('.popup-form').removeClass('popup__opened')
+                        $('html, body').css('overflow', '');
                     },
                     error:  function(xhr, str){
                       alert("Возникла ошибка!");
