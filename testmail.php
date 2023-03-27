@@ -26,30 +26,30 @@
               // если форма без ошибок
 
               // собираем данные из формыя
-              $message  .= "Имя: ".$_POST['name'];
+              $message  .= $_POST['name'];
               $message  .= "<br />";
-              $message  .= "Должность: ".$_POST['position'] ;
+              $message  .= $_POST['position'] ;
               $message  .= "<br />";
-              $message  .= "Тариф: ".$_POST['company'] ;
+              $message  .= $_POST['company'] ;
               $message  .= "<br />";
-              $message  .= ($_POST['company'] == 'Для компаний') ? 'Название компании: '.$_POST['company-name'] : '' ;
+              $message  .= ($_POST['company'] == 'Для компаний') ? $_POST['company-name'] : '' ;
               $message  .= ($_POST['company'] == 'Для компаний') ? "<br />" : '' ;
-              $message  .= ($_POST['company'] == 'Для компаний') ? 'Диплом: '.$_POST['certificate']."<br />" : '' ;
-              $message  .= "Город: ".$_POST['city'];
+              $message  .= ($_POST['company'] == 'Для компаний') ? $_POST['certificate']."<br />" : '' ;
+              $message  .= $_POST['city'];
               $message  .= "<br />";
-              $message  .= "Email: ".$_POST['email'];
+              $message  .= $_POST['email'];
               $message  .= "<br />";
-              $message  .= "Телефон: ".$_POST['phone'];
+              $message  .= $_POST['phone'];
               $message  .= "<br />";
-              $message  .= "Направление: ".$_POST['selecttype'];
+              $message  .= $_POST['selecttype'];
               $message  .= "<br />";
-              $message  .= "Описание бизнес-задачи: ".$_POST['project'];
+              $message  .= $_POST['project'];
               $message  .= "<br />";
-              $message  .= "Суть проекта: ".$_POST['idea'];
+              $message  .= $_POST['idea'];
               $message  .= "<br />";
-              $message  .= "Отрасль компании: ".$_POST['type'];
+              $message  .= $_POST['type'];
               $message  .= "<br />";
-              $message  .= "Кол-во сотрудников: ".$_POST['number'];
+              $message  .= $_POST['number'];
               send_mail($message); // отправим письмо
               // выведем сообщение об успехе
               $msg_box = "Ok";

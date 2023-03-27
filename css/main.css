@@ -633,11 +633,30 @@ a{ text-decoration: none; }
     font-size: 15px;
     line-height: 18px;
     letter-spacing: 0.01em;
-    list-style-image: url(../img/nav-li.png);
     color: #E5E5E5;
+    position: relative;
+    padding-left: 25px;
+    list-style-type: none;
 }
-.s-how-container--2__ligthning {
-    list-style-image: url(../img/Lightning.png);
+
+.s-how-container--2__li::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -4px;
+    width: 18px;
+    height: 20px;
+    background-image: url(../img/nav-li.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.s-how-container--2__ligthning::before {
+    background-image:  url(../img/Lightning.png);
+    width: 10px;
+    height: 22px;
+    left: 5px;
 }
 .s-how-container--2__price {
     font-weight: 700;
@@ -649,6 +668,10 @@ a{ text-decoration: none; }
 }
 .s-how-container--2__price--white {
     color: #fff;
+}
+
+.s-types-img-map img {
+    padding: 70px 0;
 }
 .s-how-container--2__btn {
     display: flex;
@@ -1534,6 +1557,7 @@ form {
     right: 0;
     width: 248px;
     height: 243px;
+    background-position: bottom;
 }
 .s-box-3 {
     grid-area: C;
@@ -1593,6 +1617,7 @@ form {
 
 .s-student__block::after {
     background-repeat: no-repeat;
+    background-size: cover;
 }
 .s-student__block-title {
     font-weight: 700;
@@ -2137,7 +2162,9 @@ form {
     .s-how-container-2__block {
         max-width: 380px;
     }
-    
+    .s-how-container--2__li {
+        margin-bottom: 10px;
+    }
 }
 /* 991px */
 .s-about-form {
@@ -2392,8 +2419,9 @@ form {
     .s-how-container--2__block {
         padding: 30px 5px 50px 30px;
     }
-    .s-types-img-map {
+    .s-types-img-map img {
         max-width: 840px;
+        padding: 48px 0;
     }
     .s-types-table {
         font-size: 14px;
@@ -2572,5 +2600,34 @@ form {
     }
     100% {
         left: 150%;
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+    .s-how-container--2__li::before {
+        background-image: url(../img/nav-li@2x.png);
+    }
+    .s-how-container--2__ligthning::before {
+        background-image:  url(../img/Lightning@2x.png);
+    }
+
+    .s-box-1::after {
+        background-image: url('../img/student-bg-1@2x.png');
+    }
+
+    .s-box-2::after {
+        background-image: url('../img/student-bg-2@2x.png');
+    }
+
+    .s-box-3::after {
+        background-image: url('../img/student-bg-3@2x.png');
+    }
+
+    .s-box-4::after {
+        background-image: url('../img/student-bg-4@2x.png');
+    }
+
+    .s-box-5::after {
+        background-image: url('../img/student-bg-5@2x.png');
     }
 }

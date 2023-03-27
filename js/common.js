@@ -164,7 +164,7 @@ $(".js-select-3").select2({
 
     });
 
-		  $(".s-form-block-input textarea").each(function() { 
+		 /* $(".s-form-block-input textarea").each(function() {
 
     if($(this).val() === ""){
 
@@ -234,11 +234,11 @@ let ouremail = $(this).closest('.s-form-block-input.mail').find('input');
 
     	} else{	
 
-$(this).closest('.s-form-block-input').addClass('correct');
+$(this).closest('.s-form-block-input').addClass('correct');*/
 
-    	}
 
-    	  		if($(this).closest('.s-form-block-input').hasClass('phone')){
+
+    	  		/*if($(this).closest('.s-form-block-input').hasClass('phone')){
 
 let phone = $(this).closest('.s-form-block-input.phone').find('input').val();
 
@@ -258,9 +258,9 @@ let phone = $(this).closest('.s-form-block-input.phone').find('input').val();
 
     	}
 
-     }
+     }*/
 
-     }
+    /* }
 
     
 
@@ -322,13 +322,13 @@ let ouremail = $(this).closest('.s-form-block-input.mail').find('input');
 
 $(this).closest('.s-form-block-input').addClass('correct');
 
-    	} 
+    	} */
 
-    		if($(this).closest('.s-form-block-input').hasClass('phone')){
+    		/*if($(this).closest('.s-form-block-input').hasClass('phone')){
 
 let phone = $(this).closest('.s-form-block-input.phone').find('input').val();
 
-          /*let valueWithoutMaskChars = phone.replace(/\D+/g, '');*/
+          /!*let valueWithoutMaskChars = phone.replace(/\D+/g, '');*!/
 
         if(phone.length <= 18){
 
@@ -344,11 +344,11 @@ $(this).closest('.s-form-block-input').addClass('correct');
 
     	}
 
-     }
+     }*/
 
-   }
 
-    
+
+ /*
 
     
 
@@ -394,7 +394,7 @@ $(this).closest('.s-form-block-input').addClass('correct');
 
     
 
-});
+});*/
 
 	});
 
@@ -583,7 +583,7 @@ let scene1 = gsap.timeline();
 
         trigger: ".s-how-inner",
 
-/*        /* pin: true,*/
+       /* pin: true,*/
 
     scrub:2,
 
@@ -798,5 +798,11 @@ window.addEventListener("DOMContentLoaded", function() {
         input.addEventListener("keydown", mask, false)
 
     });
+
+    let yearBlocks = document.querySelectorAll('.js-current-year');
+
+    for (let yearBlocksItem of yearBlocks) {
+        yearBlocksItem.textContent = new Date().getFullYear();
+    }
 
 });
