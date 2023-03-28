@@ -1010,6 +1010,8 @@
 									src="img/s-how-img-1.png"
 									srcset="img/s-how-img-1.png 1x, img/s-how-img-1@2x.png 2x"
 									alt="How image #1"
+									width="88"
+									height="89"
 							/>
 						</picture>
 						<p class="s-how-container-2__text">
@@ -1025,6 +1027,8 @@
 									src="img/s-how-img-4.png"
 									srcset="img/s-how-img-4.png 1x, img/s-how-img-4@2x.png 2x"
 									alt="How image #2"
+									width="96"
+									height="88"
 							/>
 						</picture>
 						<p class="s-how-container-2__text">
@@ -1040,6 +1044,8 @@
 									src="img/s-how-img-3.png"
 									srcset="img/s-how-img-3.png 1x, img/s-how-img-3@2x.png 2x"
 									alt="How image #3"
+									width="88"
+									height="89"
 							/>
 						</picture>
 						<p class="s-how-container-2__text">
@@ -1047,7 +1053,17 @@
 						</p>
 					</div>
 					<div class="s-how-container-2__block">
-						<img src="img/s-how-img-5.png" alt="" class="s-how-container-2__img">
+					<picture class="s-how-container-2__img">
+                    							<source
+                    									srcset="img/s-how-img-5.png 1x, img/s-how-img-5@2x.png 2x"
+                    							/>
+                    							<img
+                    									src="img/s-how-img-5.png"
+                    									srcset="img/s-how-img-5.png 1x, img/s-how-img-5@2x.png 2x"
+                    									alt="How image #4"
+														width="78" height="87"
+                    							/>
+                    						</picture>
 						<p class="s-how-container-2__text">
 							<span style="font-weight: bold;">Обмен опытом</span> с другими участниками
 						</p>
@@ -1061,6 +1077,8 @@
 									src="img/s-how-img-2.png"
 									srcset="img/s-how-img-2.png 1x, img/s-how-img-2@2x.png 2x"
 									alt="How image #5"
+									width="107"
+									height="94"
 							/>
 						</picture>
 						<p class="s-how-container-2__text">
@@ -1076,6 +1094,7 @@
 									src="img/s-how-img-6.png"
 									srcset="img/s-how-img-6.png 1x, img/s-how-img-6@2x.png 2x"
 									alt="How image #6"
+									width="124" height="91"
 							/>
 						</picture>
 						<p class="s-how-container-2__text">
@@ -2175,6 +2194,7 @@
 										</div>
 	
 										<div class="s-form-descr">
+											<!--<input type="checkbox" required>-->
 	
 											Отправляя эту форму, я подтверждаю свое согласие на обработку данных, указанных в анкете и даю согласие на получение организационных рассылок. Ваши данные не будут переданы третьим лицам.
 	

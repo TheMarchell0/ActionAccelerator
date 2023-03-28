@@ -600,10 +600,11 @@ a{ text-decoration: none; }
 .form_radio {
     display: flex;
     cursor: pointer;
+    justify-content: flex-start;
+    max-width: 400px;
 }
 .form_radio input {
-    max-width: 26px;
-    width: 100%;
+    width: 26px;
     height: 26px;
 }
 .form_radio label {
@@ -1921,7 +1922,7 @@ form {
     .s-box-4::after {
         background-size: contain;
         width: 236px;
-        height: 157px;
+        height: 138px;
     }
     .s-box-5::after {
         background-size: contain;
@@ -2560,6 +2561,9 @@ form {
     }
     .s-how-blocks_flex {column-gap: 70px;}
     .s-how-container--2__btn {width: 270px;}
+    .form_radio input {
+        flex-shrink: 0;
+    }
 }
 
 /* 425px */
