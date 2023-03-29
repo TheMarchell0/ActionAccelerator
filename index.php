@@ -2194,9 +2194,9 @@
 										</div>
 	
 										<div class="s-form-descr">
-											<!--<input type="checkbox" required>-->
+											<input id="form-checkbox" type="checkbox" required class="select2-hidden-accessible"/>
 	
-											Отправляя эту форму, я подтверждаю свое согласие на обработку данных, указанных в анкете и даю согласие на получение организационных рассылок. Ваши данные не будут переданы третьим лицам.
+											<label class="s-form-descr__label" for="form-checkbox">Отправляя эту форму, я подтверждаю свое согласие на обработку данных, указанных в анкете и даю согласие на получение организационных рассылок. Ваши данные не будут переданы третьим лицам.</label>
 	
 										</div>
 										<div class="text-danger" id="recaptchaError"></div>
