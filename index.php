@@ -850,7 +850,7 @@
 
 							<div class="s-steps-item-block">
 
-								<div class="s-steps-item-date"><div class="desk">2 марта — 2 апреля</div><div class="mobile">02.03 — 02.04</div></div>
+								<div class="s-steps-item-date"><div class="desk">2 марта — 30 апреля</div><div class="mobile">02.03 — 30.04</div></div>
 
 								<div class="s-steps-item-line"></div>
 
@@ -874,7 +874,7 @@
 
 							<div class="s-steps-item-block">
 
-								<div class="s-steps-item-date"><div class="desk">14 апреля</div><div class="mobile">14.04</div></div>
+								<div class="s-steps-item-date"><div class="desk">10 мая</div><div class="mobile">10.05</div></div>
 
 								<div class="s-steps-item-line"></div>
 
@@ -898,7 +898,7 @@
 
 							<div class="s-steps-item-block">
 
-								<div class="s-steps-item-date"><div class="desk">17 апреля — 29 мая</div><div class="mobile">17.04 — 29.05</div></div>
+								<div class="s-steps-item-date"><div class="desk">15 мая — 25 июня</div><div class="mobile">15.05 — 25.06</div></div>
 
 								<div class="s-steps-item-line"></div>
 
@@ -908,7 +908,7 @@
 
 							<div class="s-steps-item-block">
 
-								<div class="s-steps-item-descr">Академия Акселератора: работа с экспертами, практические семинары, коуч-сессии	</div>
+								<div class="s-steps-item-descr">Академия Акселератора: работа с экспертами, практические семинары, коуч-сессии, а также Предзащита проектов</div>
 
 							</div>
 
@@ -922,31 +922,7 @@
 
 							<div class="s-steps-item-block">
 
-								<div class="s-steps-item-date"><div class="desk">29 — 31 мая</div><div class="mobile">29.05 — 31.05</div></div>
-
-								<div class="s-steps-item-line"></div>
-
-								<div class="s-steps-item-icon1"></div>
-
-							</div>
-
-							<div class="s-steps-item-block">
-
-								<div class="s-steps-item-descr">Предзащита проектов</div>
-
-							</div>
-
-						</div>
-
-					</li>
-
-					<li>
-
-						<div class="s-steps-item flex">
-
-							<div class="s-steps-item-block">
-
-								<div class="s-steps-item-date"><div class="desk">8 июня</div><div class="mobile">08.06</div></div>
+								<div class="s-steps-item-date"><div class="desk">конец июня — начало июля</div><div class="mobile">~25.06 — ~10.07</div></div>
 
 								<div class="s-steps-item-line"></div>
 
@@ -970,7 +946,7 @@
 
 							<div class="s-steps-item-block">
 
-								<div class="s-steps-item-date"><div class="desk">15 июня — 15 декабря</div><div class="mobile">15.06 — 15.12</div></div>
+								<div class="s-steps-item-date"><div class="desk">15 июля — 15 декабря</div><div class="mobile">15.07 — 15.12</div></div>
 
 								<div class="s-steps-item-line"></div>
 
@@ -2115,7 +2091,7 @@
 	
 											<div class="s-form-block-input-label">Телефон</div>
 	
-											<input required pattern=".{18,}" type="text" name="phone" class="js-phone-valid" placeholder="+7 (999) 999 99 99" minlength="18">
+											<input required pattern=".{16,}" type="text" name="phone" class="js-phone-valid" placeholder="+7 (999) 999 99 99" minlength="16">
 	
 										</div>
 										<div class="g-recaptcha" data-sitekey="6LeldXsjAAAAANbV0jDMSYQ8roM72YzqIiQrjCz7"></div>
