@@ -1621,14 +1621,14 @@
 							/>
 						</picture>
 					</a>
-					<a href="https://hrtime.ru/" target="_blank" rel="noopener noreferrer">
+					<a href="https://akpp.top/" target="_blank" rel="noopener noreferrer">
 						<picture>
 							<source
-									srcset="img/partner (2).png 1x, img/partner (2)@2x.png 2x"
+									srcset="img/partner (7).png 1x, img/partner (7)@2x.png 2x"
 							/>
 							<img
-									src="img/partner (2).png"
-									srcset="img/partner (2).png 1x, img/partner (2)@2x.png 2x"
+									src="img/partner (7).png"
+									srcset="img/partner (7).png 1x, img/partner (7)@2x.png 2x"
 									alt=""
 							/>
 						</picture>
@@ -1645,38 +1645,14 @@
 							/>
 						</picture>
 					</a>
-					<a href="https://akpp.top/" target="_blank" rel="noopener noreferrer">
+					<a href="https://hrtime.ru/" target="_blank" rel="noopener noreferrer">
 						<picture>
 							<source
-									srcset="img/partner (7).png 1x, img/partner (7)@2x.png 2x"
+									srcset="img/partner (2).png 1x, img/partner (2)@2x.png 2x"
 							/>
 							<img
-									src="img/partner (7).png"
-									srcset="img/partner (7).png 1x, img/partner (7)@2x.png 2x"
-									alt=""
-							/>
-						</picture>
-					</a>
-					<a href="http://hrexpo.pro/?utm_source=partners&utm_medium=action&utm_campaign=logo" target="_blank" rel="noopener noreferrer">
-						<picture>
-							<source
-									srcset="img/partner (8).png 1x, img/partner (8)@2x.png 2x"
-							/>
-							<img
-									src="img/partner (8).png"
-									srcset="img/partner (8).png 1x, img/partner (8)@2x.png 2x"
-									alt=""
-							/>
-						</picture>
-					</a>
-					<a href="https://www.compandben.org/" target="_blank" rel="noopener noreferrer">
-						<picture>
-							<source
-									srcset="img/partner (9).png 1x, img/partner (9)@2x.png 2x"
-							/>
-							<img
-									src="img/partner (9).png"
-									srcset="img/partner (9).png 1x, img/partner (9)@2x.png 2x"
+									src="img/partner (2).png"
+									srcset="img/partner (2).png 1x, img/partner (2)@2x.png 2x"
 									alt=""
 							/>
 						</picture>
@@ -1701,6 +1677,30 @@
 							<img
 									src="img/partner (11).png"
 									srcset="img/partner (11).png 1x, img/partner (11)@2x.png 2x"
+									alt=""
+							/>
+						</picture>
+					</a>
+					<a href="http://hrexpo.pro/?utm_source=partners&utm_medium=action&utm_campaign=logo" target="_blank" rel="noopener noreferrer">
+						<picture>
+							<source
+									srcset="img/partner (8).png 1x, img/partner (8)@2x.png 2x"
+							/>
+							<img
+									src="img/partner (8).png"
+									srcset="img/partner (8).png 1x, img/partner (8)@2x.png 2x"
+									alt=""
+							/>
+						</picture>
+					</a>
+					<a href="https://www.compandben.org/" target="_blank" rel="noopener noreferrer">
+						<picture>
+							<source
+									srcset="img/partner (9).png 1x, img/partner (9)@2x.png 2x"
+							/>
+							<img
+									src="img/partner (9).png"
+									srcset="img/partner (9).png 1x, img/partner (9)@2x.png 2x"
 									alt=""
 							/>
 						</picture>
