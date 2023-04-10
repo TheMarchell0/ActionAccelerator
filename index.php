@@ -1564,6 +1564,54 @@
 			<div class="wrap">
 				<h2 class="s-about-title element-animation">Информационные партнеры Актион Акселератор 3.0</h2>
 				<div class="partner-container">
+				<a href="https://hr-elearning.ru/" target="_blank" rel="noopener noreferrer">
+                						<picture>
+                							<source
+                									srcset="img/partner (1).png 1x, img/partner (1)@2x.png 2x"
+                							/>
+                							<img
+                									src="img/partner (1).png"
+                									srcset="img/partner (1).png 1x, img/partner (1)@2x.png 2x"
+                									alt=""
+                							/>
+                						</picture>
+                					</a>
+                					<a href="https://hrtime.ru/" target="_blank" rel="noopener noreferrer">
+                						<picture>
+                							<source
+                									srcset="img/partner (2).png 1x, img/partner (2)@2x.png 2x"
+                							/>
+                							<img
+                									src="img/partner (2).png"
+                									srcset="img/partner (2).png 1x, img/partner (2)@2x.png 2x"
+                									alt=""
+                							/>
+                						</picture>
+                					</a>
+                					<a href="https://hrmag.ru/" target="_blank" rel="noopener noreferrer">
+                						<picture>
+                							<source
+                									srcset="img/partner (10).png 1x, img/partner (10)@2x.png 2x"
+                							/>
+                							<img
+                									src="img/partner (10).png"
+                									srcset="img/partner (10).png 1x, img/partner (10)@2x.png 2x"
+                									alt=""
+                							/>
+                						</picture>
+                					</a>
+                					<a href="https://www.rekadro.ru/" target="_blank" rel="noopener noreferrer">
+                						<picture>
+                							<source
+                									srcset="img/partner (11).png 1x, img/partner (11)@2x.png 2x"
+                							/>
+                							<img
+                									src="img/partner (11).png"
+                									srcset="img/partner (11).png 1x, img/partner (11)@2x.png 2x"
+                									alt=""
+                							/>
+                						</picture>
+                					</a>
 					<a href="http://ashrm.ru/" target="_blank" rel="noopener noreferrer">
 						<img src="img/partner (1).svg" alt="">
 					</a>
@@ -1629,54 +1677,6 @@
 							<img
 									src="img/partner (7).png"
 									srcset="img/partner (7).png 1x, img/partner (7)@2x.png 2x"
-									alt=""
-							/>
-						</picture>
-					</a>
-					<a href="https://hr-elearning.ru/" target="_blank" rel="noopener noreferrer">
-						<picture>
-							<source
-									srcset="img/partner (1).png 1x, img/partner (1)@2x.png 2x"
-							/>
-							<img
-									src="img/partner (1).png"
-									srcset="img/partner (1).png 1x, img/partner (1)@2x.png 2x"
-									alt=""
-							/>
-						</picture>
-					</a>
-					<a href="https://hrtime.ru/" target="_blank" rel="noopener noreferrer">
-						<picture>
-							<source
-									srcset="img/partner (2).png 1x, img/partner (2)@2x.png 2x"
-							/>
-							<img
-									src="img/partner (2).png"
-									srcset="img/partner (2).png 1x, img/partner (2)@2x.png 2x"
-									alt=""
-							/>
-						</picture>
-					</a>
-					<a href="https://hrmag.ru/" target="_blank" rel="noopener noreferrer">
-						<picture>
-							<source
-									srcset="img/partner (10).png 1x, img/partner (10)@2x.png 2x"
-							/>
-							<img
-									src="img/partner (10).png"
-									srcset="img/partner (10).png 1x, img/partner (10)@2x.png 2x"
-									alt=""
-							/>
-						</picture>
-					</a>
-					<a href="https://www.rekadro.ru/" target="_blank" rel="noopener noreferrer">
-						<picture>
-							<source
-									srcset="img/partner (11).png 1x, img/partner (11)@2x.png 2x"
-							/>
-							<img
-									src="img/partner (11).png"
-									srcset="img/partner (11).png 1x, img/partner (11)@2x.png 2x"
 									alt=""
 							/>
 						</picture>
