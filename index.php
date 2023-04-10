@@ -1560,7 +1560,7 @@
 				</div>
 			</div>
 		</div> -->
-<!-- 		<div class="partner">
+ 		<div class="partner">
 			<div class="wrap">
 				<h2 class="s-about-title element-animation">Информационные партнеры Актион Акселератор 3.0</h2>
 				<div class="partner-container">
@@ -1571,38 +1571,143 @@
 						<img src="img/partner (2).svg" alt="">
 					</a>
 					<a href="https://rb.ru/" target="_blank" rel="noopener noreferrer">
-						<img src="img/partner (5).png" alt="">
+						<picture>
+							<source
+									srcset="img/partner (5).png 1x, img/partner (5)@2x.png 2x"
+							/>
+							<img
+									src="img/partner (5).png"
+									srcset="img/partner (5).png 1x, img/partner (5)@2x.png 2x"
+									alt=""
+							/>
+						</picture>
 					</a>
 					<a href="https://ib-bank.ru/bisjournal/" target="_blank" rel="noopener noreferrer">
-						<img src="img/partner (3).png" alt="">
+						<picture>
+							<source
+									srcset="img/partner (3).png 1x, img/partner (3)@2x.png 2x"
+							/>
+							<img
+									src="img/partner (3).png"
+									srcset="img/partner (3).png 1x, img/partner (3)@2x.png 2x"
+									alt=""
+							/>
+						</picture>
 					</a>
 					<a href="https://ru.jobsora.com/" target="_blank" rel="noopener noreferrer">
 						<img src="img/partner (3).svg" alt="">
 					</a>
 					<a href="https://www.it-world.ru/" target="_blank" rel="noopener noreferrer">
-						<img src="img/partner (4).png" alt="">
+						<picture>
+							<source
+									srcset="img/partner (4).png 1x, img/partner (4)@2x.png 2x"
+							/>
+							<img
+									src="img/partner (4).png"
+									srcset="img/partner (4).png 1x, img/partner (4)@2x.png 2x"
+									alt=""
+							/>
+						</picture>
 					</a>
 					<a href="https://pryaniky.com/" target="_blank" rel="noopener noreferrer">
-						<img src="img/partner (6).png" alt="">
+						<picture>
+							<source
+									srcset="img/partner (6).png 1x, img/partner (6)@2x.png 2x"
+							/>
+							<img
+									src="img/partner (6).png"
+									srcset="img/partner (6).png 1x, img/partner (6)@2x.png 2x"
+									alt=""
+							/>
+						</picture>
 					</a>
 					<a href="https://hrtime.ru/" target="_blank" rel="noopener noreferrer">
-						<img src="img/partner (2).png" alt="">
+						<picture>
+							<source
+									srcset="img/partner (2).png 1x, img/partner (2)@2x.png 2x"
+							/>
+							<img
+									src="img/partner (2).png"
+									srcset="img/partner (2).png 1x, img/partner (2)@2x.png 2x"
+									alt=""
+							/>
+						</picture>
 					</a>
 					<a href="https://hr-elearning.ru/" target="_blank" rel="noopener noreferrer">
-						<img src="img/partner (1).png" alt="">
+						<picture>
+							<source
+									srcset="img/partner (1).png 1x, img/partner (1)@2x.png 2x"
+							/>
+							<img
+									src="img/partner (1).png"
+									srcset="img/partner (1).png 1x, img/partner (1)@2x.png 2x"
+									alt=""
+							/>
+						</picture>
 					</a>
 					<a href="https://akpp.top/" target="_blank" rel="noopener noreferrer">
-						<img src="img/partner (7).png" alt="">
+						<picture>
+							<source
+									srcset="img/partner (7).png 1x, img/partner (7)@2x.png 2x"
+							/>
+							<img
+									src="img/partner (7).png"
+									srcset="img/partner (7).png 1x, img/partner (7)@2x.png 2x"
+									alt=""
+							/>
+						</picture>
 					</a>
 					<a href="http://hrexpo.pro/?utm_source=partners&utm_medium=action&utm_campaign=logo" target="_blank" rel="noopener noreferrer">
-						<img src="img/partner (8).png" alt="">
+						<picture>
+							<source
+									srcset="img/partner (8).png 1x, img/partner (8)@2x.png 2x"
+							/>
+							<img
+									src="img/partner (8).png"
+									srcset="img/partner (8).png 1x, img/partner (8)@2x.png 2x"
+									alt=""
+							/>
+						</picture>
 					</a>
 					<a href="https://www.compandben.org/" target="_blank" rel="noopener noreferrer">
-						<img src="img/partner (9).png" alt="">
+						<picture>
+							<source
+									srcset="img/partner (9).png 1x, img/partner (9)@2x.png 2x"
+							/>
+							<img
+									src="img/partner (9).png"
+									srcset="img/partner (9).png 1x, img/partner (9)@2x.png 2x"
+									alt=""
+							/>
+						</picture>
+					</a>
+					<a href="https://hrmag.ru/" target="_blank" rel="noopener noreferrer">
+						<picture>
+							<source
+									srcset="img/partner (10).png 1x, img/partner (10)@2x.png 2x"
+							/>
+							<img
+									src="img/partner (10).png"
+									srcset="img/partner (10).png 1x, img/partner (10)@2x.png 2x"
+									alt=""
+							/>
+						</picture>
+					</a>
+					<a href="https://www.rekadro.ru/" target="_blank" rel="noopener noreferrer">
+						<picture>
+							<source
+									srcset="img/partner (11).png 1x, img/partner (11)@2x.png 2x"
+							/>
+							<img
+									src="img/partner (11).png"
+									srcset="img/partner (11).png 1x, img/partner (11)@2x.png 2x"
+									alt=""
+							/>
+						</picture>
 					</a>
 				</div>
 			</div>
-		</div> -->
+		</div>
 <!-- <div class="s-form" id="form">	
 		<div class="wrap" >
 

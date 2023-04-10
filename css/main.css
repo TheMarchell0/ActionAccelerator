@@ -1169,14 +1169,18 @@ a{ text-decoration: none; }
     margin-top: 60px;
     display: flex;
     flex-wrap: wrap;
-    column-gap: 86px;
+    column-gap: 113px;
     align-items: center;
     row-gap: 46px;
     justify-content: center;
     max-width: 1090px;
     margin: 75px auto 75px;
 }
-.partner-container a:hover > img {
+
+.partner-container a img {
+    transition: 0.3s linear;
+}
+.partner-container a:hover  img {
     transform: scale(1.2);
 }
 .social-icon {
@@ -1984,6 +1988,7 @@ form {
 
 /* 1200px */
 @media only screen and (max-width: 991px) {
+    .partner-container{column-gap:86px;}
     .wrap{ padding: 0 60px; }
     .s-header-menu{ display: none; }
     .s-header{ padding: 20px 0; }
