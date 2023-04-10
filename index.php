@@ -1612,7 +1612,7 @@
                 							/>
                 						</picture>
                 					</a>
-					<a href="http://ashrm.ru/" target="_blank" rel="noopener noreferrer">
+<!--					<a href="http://ashrm.ru/" target="_blank" rel="noopener noreferrer">
 						<img src="img/partner (1).svg" alt="">
 					</a>
 					<a href="https://nbj.ru/" target="_blank" rel="noopener noreferrer">
@@ -1704,7 +1704,7 @@
 									alt=""
 							/>
 						</picture>
-					</a>
+					</a> -->
 				</div>
 			</div>
 		</div>
