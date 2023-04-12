@@ -1612,10 +1612,10 @@
                 							/>
                 						</picture>
                 					</a>
-<!--					<a href="http://ashrm.ru/" target="_blank" rel="noopener noreferrer">
+				<a href="http://ashrm.ru/" target="_blank" rel="noopener noreferrer">
 						<img src="img/partner (1).svg" alt="">
 					</a>
-					<a href="https://nbj.ru/" target="_blank" rel="noopener noreferrer">
+					<!--	<a href="https://nbj.ru/" target="_blank" rel="noopener noreferrer">
 						<img src="img/partner (2).svg" alt="">
 					</a>
 					<a href="https://rb.ru/" target="_blank" rel="noopener noreferrer">
