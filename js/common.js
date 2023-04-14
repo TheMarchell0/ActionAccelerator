@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
   $(".js-select-3").select2({
-    placeholder: "С сертификатом",
+    placeholder: "С дипломом",
 
     minimumResultsForSearch: Infinity,
   });

@@ -32,7 +32,7 @@ function onEntry(entry) {
 	observer.observe(elm);
   }
 
-  const tabParent = $('.s-types-map');
+  const tabParent = $('.s-types-map-content');
 
   tabParent.on('click', '.s-types-table', function(){
 	if(!$(this).hasClass('.s-types-table--active')) {
