@@ -53,50 +53,19 @@ function onEntry(entry) {
 		.eq($(this).index())
 		.addClass('s-types-table__text--active');
 	}
-	setTimeout(() => {
-		$(this).removeClass('s-types-table--active');
-		tabParent
-			.find('.s-types-table > .s-types-table__title')
-			.eq($(this).index())
-			.removeClass('s-types-table__title--active');
-		tabParent
-			.find('.s-types-table > .s-types-table__text')
-			.eq($(this).index())
-			.removeClass('s-types-table__text--active');
-	}, 5000)
-  });
-  const tab = $('.s-types-table');
-  
-  tab.hover( function(){
-	if(!$(this).hasClass('.s-types-table--active')) {
-	  tabParent
-		.find('.s-types-table__title > .--active, .s-types-table__text .--active')
-		.removeClass('--active');
-		
-	  $(this)
-		.addClass('s-types-table--active');
-
-	tabParent
-		.find('.s-types-table > .s-types-table__title')
-		.eq($(this).index())
-		.addClass('s-types-table__title--active');
-
-	  tabParent
-		.find('.s-types-table > .s-types-table__text')
-		.eq($(this).index())
-		.addClass('s-types-table__text--active');
-	}
-	setTimeout(() => {
-		$(this).removeClass('s-types-table--active');
-		tabParent
-			.find('.s-types-table > .s-types-table__title')
-			.eq($(this).index())
-			.removeClass('s-types-table__title--active');
-		tabParent
-			.find('.s-types-table > .s-types-table__text')
-			.eq($(this).index())
-			.removeClass('s-types-table__text--active');
-	}, 5000)
+	  $(this).mouseleave(function(){
+		  setTimeout(() => {
+			  $(this).removeClass('s-types-table--active');
+			  tabParent
+				  .find('.s-types-table > .s-types-table__title')
+				  .eq($(this).index())
+				  .removeClass('s-types-table__title--active');
+			  tabParent
+				  .find('.s-types-table > .s-types-table__text')
+				  .eq($(this).index())
+				  .removeClass('s-types-table__text--active');
+		  }, 100)
+	  });
   });
 
 

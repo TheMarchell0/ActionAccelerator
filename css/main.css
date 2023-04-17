@@ -528,7 +528,7 @@ a{ text-decoration: none; }
 
 .s-steps-item-date .mobile{ display: none; }
 
-.s-steps-item-descr{ font-style: normal;font-weight: normal;font-size: 17px;line-height: 28px;letter-spacing: 0.01em;color: #fff;padding-left: 20px;max-width: 398px;padding-top: 31px; }
+.s-steps-item-descr{ font-style: normal;font-weight: normal;font-size: 17px;line-height: 28px;letter-spacing: 0.01em;color: #fff;padding-left: 20px;padding-top: 31px; }
 
 .s-steps-img{ position: absolute;bottom: -110px;right: 78px; }
 
@@ -759,7 +759,7 @@ a{ text-decoration: none; }
     left: -100%;
     z-index: 1;
     width: 500.42px;
-    height: 644.68px;
+    height: 494.68px;
     background: #326CF9;
     border-radius: 5px;
 }
@@ -2540,6 +2540,7 @@ form {
     .s-about-descr-3 {
         font-size: 15px;
         line-height: 18px;
+        min-height: 64px;
     }
     .s-about-block--border-2 {
         min-height: 170px;
