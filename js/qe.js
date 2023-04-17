@@ -64,7 +64,7 @@ function onEntry(entry) {
 				  .find('.s-types-table > .s-types-table__text')
 				  .eq($(this).index())
 				  .removeClass('s-types-table__text--active');
-		  }, 3000)
+		  }, 5000)
 	  });
   });
 
