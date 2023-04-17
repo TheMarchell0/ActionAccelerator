@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="acca130c-48cb-447b-862a-2780ca980eb9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/qe.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/qe.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +27,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Alexandr Nechkasov/Desktop/ads/Рассылка с нормальными картинками.html",
+    "last_opened_file_path": "C:/Users/Alexandr Nechkasov/Desktop/ActionAccelerator",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -43,7 +41,8 @@
       <option name="presentableId" value="Default" />
       <updated>1681485431407</updated>
       <workItem from="1681485433986" duration="12000" />
-      <workItem from="1681725466858" duration="8561000" />
+      <workItem from="1681725466858" duration="9281000" />
+      <workItem from="1681739237307" duration="597000" />
     </task>
     <servers />
   </component>
