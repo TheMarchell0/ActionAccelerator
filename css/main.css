@@ -217,8 +217,6 @@ a{ text-decoration: none; }
 
 .s-about-block--border {position: relative; width: 32%; padding: 0;}
 
-.s-about-block--border::after {content: '';  display: block; position: absolute; top: 40px; left: 0; width: 1px; height: 157px; background-color: #fff;}
-
 .s-about-cont{ margin-bottom: 50px; }
 
 .s-about-wrap {display: flex; flex-direction: column; row-gap: 100px;}
@@ -556,8 +554,7 @@ a{ text-decoration: none; }
     box-shadow: 0px 4px 43px rgba(0, 0, 0, 0.05);
     backdrop-filter: blur(7.70942px);
     border-radius: 5px;
-    height: 937px;
-    padding: 50px 70px 85px 70px;
+    padding: 32px 58px 41px 90px
 }
 .s-how-container--2 {
     display: flex;
@@ -569,10 +566,30 @@ a{ text-decoration: none; }
     transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s; 
 }
 
+.s-how-container--2__block {
+    width: 100%;
+}
+
+.s-how-container__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.s-how-container__text {
+    max-width: 470px;
+    margin-right: 30px;
+}
+
+.s-how-container__checkboxes {
+    align-self: flex-end;
+    max-width: 445px;
+    width: 100%;
+}
+
 .s-how-container--2__block--title {
     font-weight: 700;
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 40px;
+    line-height: 48px;
     letter-spacing: 0.06em;
     color: #fff;
     margin-bottom: 25px;
@@ -583,11 +600,9 @@ a{ text-decoration: none; }
     line-height: 140%;
     letter-spacing: 0.01em;
     color: #E5E5E5;
-    margin-bottom: 65px;
+    margin-bottom: 24px;
 }
-.s-how-container--2__block {
-    max-width: 45%;
-}
+
 .s-how-container--2__btn-text {
     font-weight: 500;
     font-size: 15px;
@@ -625,11 +640,8 @@ a{ text-decoration: none; }
     display: flex;
     flex-direction: column;
     row-gap: 15px;
-    margin-bottom: 50px;
 }
-.s-how-container--2__nav--2 {
-    margin-bottom: 157px;
-}
+
 .s-how-container--2__li {
     font-weight: 400;
     font-size: 15px;
@@ -681,7 +693,7 @@ a{ text-decoration: none; }
     font-size: 48px;
     line-height: 120%;
     color: #757575;
-    margin-bottom: 35px;
+    margin-bottom: 28px;
     margin-top: 20px;
 }
 .s-how-container--2__price--white {
@@ -710,22 +722,13 @@ a{ text-decoration: none; }
     text-align: center;
     cursor: pointer;
 }
-.s-how-container--2__border::after {
-    display: block;
-    content: '';
-    position: absolute;
-    top: 30px;
-    left: 50%;
-    width: 1px;
-    height: 672px;
-    background-color: #fff;
-}
+
 .s-how-container--2__price-sub {
     font-weight: 400;
     font-size: 24px;
     line-height: 120%;
     color: #FFFFFF;
-    margin-bottom: 35px;
+    margin-bottom: 12px;
     position: relative;
     width: max-content;
 }
@@ -830,7 +833,7 @@ a{ text-decoration: none; }
 }
 .s-how-inner{ position: relative;padding: 100px 0 130px; }
 
-.s-how .s-how-inner{ position: relative;padding: 160px 0 130px!important; }
+.s-how .s-how-inner{ position: relative;padding: 160px 0 70px!important; }
 
 .s-how-inner__subtilte { margin-top: 20px; font-size: 15px; line-height: 18px; text-align: center; letter-spacing: 0.01em; color: #E4E4E4; max-width: 968px; margin: 20px auto 0;}
 
@@ -2109,6 +2112,10 @@ form {
 
 /* 1200px */
 @media only screen and (max-width: 991px) {
+    .s-how-container__content {flex-direction: column;}
+    .s-how-container__text {margin-right: 0;}
+    .s-how-container__checkboxes {align-self: initial; margin-top: 34px;}
+    .s-how-container--2__block--title {font-size: 36px;}
     .project-req__wrapper {padding: 30px;}
     .project-req::after {display: none;}
     .wrap{ padding: 0 60px; }
@@ -2269,9 +2276,7 @@ form {
         padding: 0;
         height: auto;
     }
-    .s-how-container--2__border::after {
-        display: none;
-    }
+
     .s-how-container--2__block {
         background: linear-gradient(180deg, #316AF5 0%, #712AF7 100%);
         box-shadow: 0px 4px 43px rgba(0, 0, 0, 0.05);
@@ -2578,7 +2583,7 @@ form {
         padding: 30px;
     }
     .s-how-container--2__block {
-        padding: 30px 5px 50px 30px;
+        padding: 30px 5px 50px 15px;
     }
     .s-types-img-map img {
         max-width: 840px;
