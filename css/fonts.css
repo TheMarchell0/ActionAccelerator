@@ -35,4 +35,12 @@
     font-weight: 400;
 }
 
+@font-face {
+    font-family: "Lab Grotesque";
+    src: url("../fonts/labgrotesque-thin.eot"); /* IE9 */
+    src: url("../fonts/labgrotesque-thin.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/labgrotesque-thin.ttf") format("truetype"); /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    font-style: normal;
+    font-weight: 300;
+}
 

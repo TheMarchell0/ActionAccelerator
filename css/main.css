@@ -1202,6 +1202,48 @@ a{ text-decoration: none; }
     margin: 75px auto 75px;
 }
 
+.nomination-partner__line {
+    row-gap: 86px;
+    margin: 54px auto 75px;
+}
+
+.nomination-partner__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nomination-partner__text {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    padding-bottom: 14px;
+    text-align: center;
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nomination-partner__link {
+    position: relative;
+    padding-top: 27px;
+}
+
+.nomination-partner__link::before {
+    content: '';
+    display: block;
+    height: 3px;
+    background: linear-gradient(90deg, #7427F7 3.67%, #FFBB88 94.95%);
+    width: 198px;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%) rotate(180deg);
+    left: 50%;
+}
+
 .partner-container a img {
     transition: 0.3s linear;
 }
@@ -1463,6 +1505,14 @@ form {
         font-size: 34px;
         margin-right: 10px;
     }
+      .qe {
+          padding-top: 25px;
+      }
+
+      .nomination-partner__line {
+          row-gap: 50px;
+      }
+
 
   }
 .s-title-left {
