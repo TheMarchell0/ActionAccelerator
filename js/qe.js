@@ -18,6 +18,25 @@ $('.s-student__container-slider').slick({
 	adaptiveHeight: true
 });
 
+const swiper = new Swiper(".experts-slider", {
+	effect: 'coverflow',
+	centeredSlides: true,
+	initialSlide: 2,
+	slidesPerView: 'auto',
+	spaceBetween: 70,
+	coverflowEffect: {
+		rotate: 0,
+		stretch: 0,
+		depth: 70,
+		modifier: 1.3,
+	},
+
+	navigation: {
+		nextEl: ".experts__navigation-slider-next",
+		prevEl: ".experts__navigation-slider-prev",
+	},
+});
+
 function onEntry(entry) {
 	entry.forEach(change => {
 	  if (change.isIntersecting) {
