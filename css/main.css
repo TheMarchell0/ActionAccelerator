@@ -601,7 +601,7 @@ a{ text-decoration: none; }
 }
 
 .expert__photo {
-    background: linear-gradient(180deg, #316AF5 0%, #712AF7 100%);
+    background: linear-gradient(180deg, #FFBB88 0%, #712AF7 100%);
 }
 
 .expert__photo picture {

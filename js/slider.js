@@ -29,3 +29,5 @@ $('.carousel-container').slick({
       }
     ]
   });
+
+  

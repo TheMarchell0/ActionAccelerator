@@ -20,8 +20,9 @@ $('.s-student__container-slider').slick({
 
 const swiper = new Swiper(".experts-slider", {
 	effect: 'coverflow',
-	centeredSlides: true,
-	initialSlide: 2,
+	loop: 'true',
+
+	initialSlide: 0,
 	slidesPerView: 'auto',
 	spaceBetween: 70,
 	coverflowEffect: {
@@ -36,6 +37,7 @@ const swiper = new Swiper(".experts-slider", {
 		prevEl: ".experts__navigation-slider-prev",
 	},
 });
+
 
 function onEntry(entry) {
 	entry.forEach(change => {

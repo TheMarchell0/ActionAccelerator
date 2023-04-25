@@ -195,7 +195,7 @@ function message_to_email($text, $email) {
 							  <td class="es-m-p0r" valign="top" align="center" style="padding:0;Margin:0;width:540px">
 							   <table width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
 								 <tr>
-								  <td align="left" style="padding:0;Margin:0;padding-bottom:20px"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial,  sans-serif;line-height:38px;color:#ffffff;font-size:32px">Здравсвтуйте!</p></td>
+								  <td align="left" style="padding:0;Margin:0;padding-bottom:20px"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial,  sans-serif;line-height:38px;color:#ffffff;font-size:32px">Здравствуйте!</p></td>
 								 </tr>
 								 <tr>
 								  <td align="left" style="padding:0;Margin:0;padding-bottom:20px"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial,  sans-serif;line-height:17px;color:#e4e4e4;font-size:14px">Спасибо за интерес, проявленный к проекту <strong><span style="color:#326cf9">Актион Акселератор 3.0!</span></strong><br>Ваша заявка на участие в программе принята и будет рассмотрена.</p></td>
